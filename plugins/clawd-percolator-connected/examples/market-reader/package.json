@@ -1,0 +1,7 @@
+{
+  "name": "percolator-market-reader",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Read-only fetches of verified Percolator and Imperial public market endpoints. No keys, no writes."
+}

@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "pumpai-launch": {
+      "type": "http",
+      "url": "https://pumpai.ai/mcp"
+    },
+    "pumpai-tools": {
+      "type": "http",
+      "url": "https://pumpai.ai/tools"
+    },
+    "bubblemaps-docs": {
+      "type": "http",
+      "url": "https://docs.bubblemaps.io/mcp"
+    }
+  }
+}

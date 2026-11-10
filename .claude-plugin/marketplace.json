@@ -1,12 +1,12 @@
 {
-  "name": "musebook",
+  "name": "clawd",
   "owner": {
-    "name": "Musebook / Clawd",
-    "url": "https://musebook.trade"
+    "name": "Clawd",
+    "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "The Musebook plugin marketplace for Claude Code / Claude: public, read-only Musebook MCP plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery. Live hub: https://plugin.musebook.trade",
-    "version": "0.1.0",
+    "description": "The Clawd plugin marketplace for Claude Code / Claude: public read-only plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery, plus clawd-percolator-connected (PumpAI, Bubblemaps docs, Percolator and Imperial research skills).",
+    "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -126,6 +126,27 @@
         "solana",
         "mcp",
         "clawd"
+      ],
+      "category": "productivity",
+      "strict": false
+    },
+    {
+      "name": "clawd-percolator-connected",
+      "source": "./plugins/clawd-percolator-connected",
+      "description": "CLAWD Tools & Wallets plus Percolator: PumpAI launch tools, Bubblemaps documentation guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle. Includes CLAWD unified backend design, owner-signed Imperial trade policy, and Phoenix read-only adapter guidance. Production write access stays disabled pending deployment and security review.",
+      "version": "0.7.0",
+      "author": {
+        "name": "cheshire",
+        "url": "https://pumpai.ai"
+      },
+      "homepage": "https://pumpai.ai",
+      "keywords": [
+        "clawd",
+        "pumpai",
+        "solana",
+        "percolator",
+        "imperial",
+        "perps"
       ],
       "category": "productivity",
       "strict": false

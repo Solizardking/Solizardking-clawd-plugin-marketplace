@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the Musebook Claude plugin marketplace (stdlib only).
+"""Validate the Clawd Claude plugin marketplace (stdlib only).
 
 Checks:
   1. Every *.json file in the repo parses as JSON.
@@ -7,8 +7,10 @@ Checks:
   3. Each marketplace plugin entry: source dir exists, its
      .claude-plugin/plugin.json parses and its "name" matches the
      marketplace entry name, version/description/author are present.
-  4. Each plugin has a .mcp.json that parses, declares an mcpServers entry,
-     and points at the public endpoint https://musebook.trade/mcp.
+  4. Each plugin has a .mcp.json that parses and declares mcpServers
+     entries with https URLs. Plugins named musebook-* must include the
+     public endpoint https://musebook.trade/mcp. Other plugins keep their
+     own declared servers.
   5. Each plugin has a README.md and at least one skills/*/SKILL.md.
   6. No plugin directory exists that is not listed in the marketplace,
      and no duplicate plugin names.
@@ -104,7 +106,9 @@ def main():
                     fail(f"{name}: .mcp.json has no mcpServers entries")
                 else:
                     urls = [s.get("url") for s in servers.values() if isinstance(s, dict)]
-                    if PUBLIC_MCP_URL not in urls:
+                    if not urls or any(not isinstance(u, str) or not u.startswith("https://") for u in urls):
+                        fail(f"{name}: .mcp.json servers need https URLs, got {urls}")
+                    if name.startswith("musebook-") and PUBLIC_MCP_URL not in urls:
                         fail(f"{name}: .mcp.json must point at {PUBLIC_MCP_URL}, got {urls}")
 
         if not (pdir / "README.md").exists():

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "pumpai-launch": {
+      "type": "streamable-http",
+      "url": "https://pumpai.ai/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "none"
+          }
+        }
+      }
+    },
+    "pumpai-tools": {
+      "type": "streamable-http",
+      "url": "https://pumpai.ai/tools",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "none"
+          }
+        }
+      }
+    },
+    "bubblemaps-docs": {
+      "type": "streamable-http",
+      "url": "https://docs.bubblemaps.io/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,13 +10,18 @@ repo name wins.
 
 ## What exists locally
 
-- `.claude-plugin/marketplace.json` — marketplace name `musebook`, owner
-  Musebook / Clawd, 6 plugins.
-- `plugins/` — `musebook-directory`, `musebook-launches`, `musebook-markets`,
-  `musebook-paper`, `musebook-chess`, `musebook-x402`. Each has
+- `.claude-plugin/marketplace.json` — marketplace name `clawd`, owner
+  Clawd. Metadata version `1.0.0` after the rename from `musebook` (2026-11-10).
+  Install suffix is `@clawd`.
+- `plugins/` — the original six (`musebook-directory`, `musebook-launches`,
+  `musebook-markets`, `musebook-paper`, `musebook-chess`, `musebook-x402`)
+  plus `clawd-percolator-connected` (v0.7.0, updated 2026-11-10 from
+  `clawd-percolator-connected-v0.7.0-rc1`: assets, docs, examples, skills,
+  README, CHANGELOG, `plugin.json`, `mcp.json`). The six Musebook plugins each have
   `.claude-plugin/plugin.json` (v0.1.0), `.mcp.json` →
   `https://musebook.trade/mcp` (public, no auth), `README.md`, and
-  `skills/<name>/SKILL.md`.
+  `skills/<name>/SKILL.md`. The percolator plugin keeps its own MCP servers
+  (`pumpai.ai/mcp`, `pumpai.ai/tools`, `docs.bubblemaps.io/mcp`).
 - `README.md`, `validate.py` (stdlib-only validator), this plan.
 - Tool split verified against the 107-tool public snapshot
   (`~/workspace/musebook-provider/mcp-tools.json`, checked 2026-11-09):
