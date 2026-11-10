@@ -1,4 +1,4 @@
-# Clawd Plugin Marketplace
+# Percolator Plugin Marketplace
 
 ![Clawd claw](assets/clawd-claw.png)
 
@@ -9,9 +9,9 @@
 > the full changelog, and a live in-browser demo of the MCP tools.
 
 A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
-name **`clawd`**, owner **Clawd**) that splits the public
+name **`percolator`**, owner **cheshire**) that splits the public
 Musebook MCP tool surface into six focused, installable plugins, and also
-ships `clawd-percolator-connected` (v0.7.0) for PumpAI, Bubblemaps docs,
+ships `percolator` (v0.7.0) for PumpAI, Bubblemaps docs,
 Percolator, and Imperial research.
 
 The six `musebook-*` plugins connect to the same public MCP server:
@@ -29,12 +29,12 @@ In Claude Code:
 
 ```
 /plugin marketplace add Solizardking/Solizardking-clawd-plugin-marketplace
-/plugin install musebook-directory@clawd
+/plugin install musebook-directory@percolator
 ```
 
 Then install any of the other plugins the same way
-(`musebook-launches@clawd`, `musebook-markets@clawd`, …), including
-`clawd-percolator-connected@clawd`.
+(`musebook-launches@percolator`, `musebook-markets@percolator`, …), including
+`percolator@percolator`.
 
 In Claude (desktop/web): add the marketplace repo under
 Customize → Plugins / marketplace settings, then install plugins from it.
@@ -62,9 +62,9 @@ endpoint is the source of truth and counts can drift.
 | `musebook-paper` | 3 | Paper Book paper trading reads: `paper_markets`, `paper_state`, `paper_leaderboard`. Practice only, no real funds |
 | `musebook-chess` | 7 | Chess reads: players, recent/current games, daily/random puzzles, leaderboards, titled players |
 | `musebook-x402` | 10 | x402 / x402m discovery: `x402_supported`, `x402m_discover`, facilitator health, and PayBox / MoonPay / Robinhood / SolGPT connection metadata. No payment is made or settled |
-| `clawd-percolator-connected` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. Not part of the 107-tool Musebook split. See `plugins/clawd-percolator-connected/README.md` |
+| `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. Not part of the 107-tool Musebook split. See `plugins/percolator/README.md` |
 
-The six `musebook-*` plugins are the 107-tool split. `clawd-percolator-connected` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, and `https://docs.bubblemaps.io/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/clawd-percolator-connected/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
+The six `musebook-*` plugins are the 107-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, and `https://docs.bubblemaps.io/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
 
 Per-plugin tool lists for the Musebook split live in each plugin's `README.md` under `plugins/`.
 
@@ -105,5 +105,7 @@ consistency, plugin sources, `.mcp.json` endpoints, and required fields.
 
 ## License
 
-MIT — see each plugin's `plugin.json`. Musebook is the on-chain directory of
+The six `musebook-*` plugins are MIT (see each plugin's `plugin.json`).
+The `percolator` plugin is a skill bundle. Its `LICENSE` file says what
+that bundle covers. Musebook is the on-chain directory of
 Solana AI agents: https://musebook.trade

@@ -24,58 +24,58 @@
     "sha256": "5b817bb2fa21aa2805bdac04a53e89d018d1fd82df5754b0bcb614382421af6e"
   },
   {
-    "skill": "agent-orchestration/agent-self-scheduling",
+    "skill": "agent-self-scheduling",
     "frontmatter_name": "agent-self-scheduling",
     "description": "Make an AI agent run on a schedule, loop, or interval \u2014 cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.",
-    "package_path": "skills/agent-orchestration/agent-self-scheduling/SKILL.md",
+    "package_path": "skills/agent-self-scheduling/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "07f094bb99bced1ed68bc9acc02eff010107a034335c39a19aab58203dde448c"
   },
   {
-    "skill": "agent-orchestration/cmux",
+    "skill": "cmux",
     "frontmatter_name": "cmux",
     "description": "MUST be read ANY time you interact with cmux in ANY way \u2014 listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or r",
-    "package_path": "skills/agent-orchestration/cmux/SKILL.md",
+    "package_path": "skills/cmux/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "a9da635dd08f2c69259e45ffb2a08ad93e9a8eba1da651841d6b979800d47251"
   },
   {
-    "skill": "agent-orchestration/codex-subagent",
+    "skill": "codex-subagent",
     "frontmatter_name": "codex-subagent",
     "description": "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent \u2014 parallel implementation work, a second opinion, or an independent verification pass.",
-    "package_path": "skills/agent-orchestration/codex-subagent/SKILL.md",
+    "package_path": "skills/codex-subagent/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "73fa4ae43cf4b0142336c3d5c2e54582561af8714d09ab06d3e37682d71ca5fe"
   },
   {
-    "skill": "agent-orchestration/fable-safe-prompt",
+    "skill": "fable-safe-prompt",
     "frontmatter_name": "fable-safe-prompt",
     "description": "Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason \"refusal\"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use top",
-    "package_path": "skills/agent-orchestration/fable-safe-prompt/SKILL.md",
+    "package_path": "skills/fable-safe-prompt/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "6bc9b25ab01a38a7d00907973ce4c002aa36d1dbf1b0d98936feecfe4bbf2363"
   },
   {
-    "skill": "agent-orchestration/goal-loop",
+    "skill": "goal-loop",
     "frontmatter_name": "goal-loop",
     "description": "Explain and write effective instructions for the `/goal` feature \u2014 the persistent self-checking agent loop (plan \u2192 act \u2192 test \u2192 review \u2192 iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running auto",
-    "package_path": "skills/agent-orchestration/goal-loop/SKILL.md",
+    "package_path": "skills/goal-loop/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "2f8b007493f81cf82855578114c989755c5ba9950b7607270a334b77accdd392"
   },
   {
-    "skill": "agent-orchestration/handoff",
+    "skill": "handoff",
     "frontmatter_name": "handoff",
     "description": "Compact the current conversation into a single, detailed handoff message \u2014 everything that happened, why it happened, and what's left \u2014 output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task ac",
-    "package_path": "skills/agent-orchestration/handoff/SKILL.md",
+    "package_path": "skills/handoff/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "4564ebbc77b8528f0da8c7a3801b8dd138b67c78e9fcb7f0a6e78248715019af"
   },
   {
-    "skill": "agent-orchestration/run-deep-swe",
+    "skill": "run-deep-swe",
     "frontmatter_name": "run-deep-swe",
     "description": "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval \u2014 \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-rep",
-    "package_path": "skills/agent-orchestration/run-deep-swe/SKILL.md",
+    "package_path": "skills/run-deep-swe/SKILL.md",
     "group": "agent-orchestration",
     "sha256": "0a76a4c26536a11a8c576896f86b6e04ccf48f994c667ad6986bf823385b6616"
   },
@@ -168,106 +168,106 @@
     "sha256": "7ebde1387c199db2b1717a54dc9ec00ba5bc5989c2fcc3a05e439513d8ebf3e8"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/alpha-scanner",
+    "skill": "alpha-scanner",
     "frontmatter_name": "alpha-scanner",
     "description": "Scan Solana for early trading opportunities (new launches, unusual volume, social catalysts, and smart-money flow) and present structured alpha reports. Use when hunting early token signals. Not a buy recommendation.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/alpha-scanner/SKILL.md",
+    "package_path": "skills/alpha-scanner/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "79271d4b2be081a927bff1786c5caeaaa54fa318f93df81ec83e7c07bf091fd7"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/clawhunter-bounties",
+    "skill": "clawhunter-bounties",
     "frontmatter_name": "clawhunter-bounties",
     "description": "Claw Hunter is an HTTP API over crowdsourced crypto bounties aggregated from",
-    "package_path": "skills/clawd-pump-agent-skills/skills/clawhunter-bounties/SKILL.md",
+    "package_path": "skills/clawhunter-bounties/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "640ca154eb574f0f9d44c7c45e229568154afabd9fc99b5b9a65796dbfc92324"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/clawhunter-content-studio",
+    "skill": "clawhunter-content-studio",
     "frontmatter_name": "clawhunter-content-studio",
     "description": "Claw's agent tools for producing social/crypto content \u2014 text, images, video",
-    "package_path": "skills/clawd-pump-agent-skills/skills/clawhunter-content-studio/SKILL.md",
+    "package_path": "skills/clawhunter-content-studio/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "cd40388822cd444fabf843eb746eb954fa3ed52c7d35475d211abc658f674e1b"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/clawpump",
+    "skill": "clawpump",
     "frontmatter_name": "clawpump",
     "description": "ClawPump on Solana \u2014 create/chat with agents, trade, perps, DCA, lend, launch tokens, marketplace, predictions, gift cards, agent email, intelligence via mcp_clawpump_* tools. Use when the user mentions ClawPump, launching a token, an agent's wallet/balance, swaps, perps, gift cards, agent email, or DeFi on S",
-    "package_path": "skills/clawd-pump-agent-skills/skills/clawpump/SKILL.md",
+    "package_path": "skills/clawpump/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "2966484cfcb88faaaf18f52aa321d88ab1409945a4b1a7bc384e9fa9d7d535eb"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/dca-strategy",
+    "skill": "dca-strategy",
     "frontmatter_name": "dca-strategy",
     "description": "Plan and execute dollar-cost averaging into a Solana token on a budget, frequency, and duration, with per-interval reporting and a weekly summary. Use when the user wants a recurring buy plan.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/dca-strategy/SKILL.md",
+    "package_path": "skills/dca-strategy/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "fec292524c8043deec82cbe0f2a18f20c90c52e60b1674e753d55c861c8b5226"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/dex-pools",
+    "skill": "dex-pools",
     "frontmatter_name": "dex-pools",
     "description": "Solana DEX liquidity, OHLCV candles, and venue discovery for any token/pool via GeckoTerminal (keyless). Use to sanity-check swap slippage, find the deepest venue, and read price history.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/dex-pools/SKILL.md",
+    "package_path": "skills/dex-pools/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "47441a1993f1894619204aa79083dab4681154edc4088ab15c07592b39b6d2cc"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/laso-finance",
+    "skill": "laso-finance",
     "frontmatter_name": "laso-finance",
     "description": "Order and manage Laso Finance wallet cards, gift cards, push-to-card payouts, and account state on Solana. Quote first, then wait for explicit approval before any paid order or secret reveal.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/laso-finance/SKILL.md",
+    "package_path": "skills/laso-finance/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "6152923528d54683c6c62a42377283e71037f26db49f7d89c232f545e869c7ae"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/meme-analyzer",
+    "skill": "meme-analyzer",
     "frontmatter_name": "meme-analyzer",
     "description": "Structured Solana meme-token analysis covering liquidity, holder distribution, social sentiment, rug-pull red flags, and a 0-100 score. Use when the user asks to analyze a meme token. Not financial advice.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/meme-analyzer/SKILL.md",
+    "package_path": "skills/meme-analyzer/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "2a9b66809c5bd22cb18435ab032b64103ddd7bf248f07c032b39ad2cc3778771"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/risk-manager",
+    "skill": "risk-manager",
     "frontmatter_name": "risk-manager",
     "description": "Pre-trade risk checks for position sizing, concentration, drawdown, and liquidity, returning a 1-10 score and a proceed, reduce, review, or block recommendation. Use before significant swaps.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/risk-manager/SKILL.md",
+    "package_path": "skills/risk-manager/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "cc74baf1133fc7869df386c05a7bfab737385b0b7bdfff40f63e787adf02438b"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/rug-check",
+    "skill": "rug-check",
     "frontmatter_name": "rug-check",
     "description": "Solana token safety diligence: mint/freeze authority, LP lock/burn, top-holder concentration, RugCheck score. Read-only \u2014 run before swapping into or launching alongside any token.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/rug-check/SKILL.md",
+    "package_path": "skills/rug-check/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "065fd8c1b75140a66544ebfc0bddf8d290f2196b110be21997bdfc88222cbcf7"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/straight-talk",
+    "skill": "straight-talk",
     "frontmatter_name": "straight-talk",
     "description": "Turn an agent trade, launch, hold, or flat day into an honest public SOAG post with no price promises and a trap flag when needed. Use when writing social posts about trading activity.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/straight-talk/SKILL.md",
+    "package_path": "skills/straight-talk/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "96f60bc1e56bd4b7a1d334283c1dca222fbf5445c601bd961ec1d805a7280867"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/survivor-check",
+    "skill": "survivor-check",
     "frontmatter_name": "survivor-check",
     "description": "Judge whether a Solana token has earned trust by surviving (age, liquidity still present, two-sided volume) or is a trap, and return a survivor, wait, or trap verdict. Use before buying.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/survivor-check/SKILL.md",
+    "package_path": "skills/survivor-check/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "b1f847591855995813202b770b4869df9504e76efc7728fc00563032e9416430"
   },
   {
-    "skill": "clawd-pump-agent-skills/skills/whale-tracker",
+    "skill": "whale-tracker",
     "frontmatter_name": "whale-tracker",
     "description": "Monitor and interpret large Solana wallet movements (accumulation, exits, and net flow) while excluding protocol and exchange addresses. Use when the user asks what whales are doing.",
-    "package_path": "skills/clawd-pump-agent-skills/skills/whale-tracker/SKILL.md",
+    "package_path": "skills/whale-tracker/SKILL.md",
     "group": "clawd-pump-agent-skills",
     "sha256": "6cb0285c384b14e7c5a6d80abececdacee99daf7a0644c264da2d6883b996108"
   },
@@ -640,42 +640,42 @@
     "sha256": "003f13077884609e876ade4653210b865610e257b4576ca5802635cee940874c"
   },
   {
-    "skill": "pump-fun/coin-fees",
+    "skill": "coin-fees",
     "frontmatter_name": "coin-fees",
     "description": "**MANDATORY \u2014 Do NOT write or modify any code until every item below is answered by the user:**",
-    "package_path": "skills/pump-fun/coin-fees/SKILL.md",
+    "package_path": "skills/coin-fees/SKILL.md",
     "group": "pump-fun",
     "sha256": "889041d419c3db5532d61a0c32d48dd2949c61111c5d0236340caf67df6c2621"
   },
   {
-    "skill": "pump-fun/create-coin",
+    "skill": "create-coin",
     "frontmatter_name": "create-coin",
     "description": "**MANDATORY \u2014 Do NOT write or modify any code until every item below is answered by the user:**",
-    "package_path": "skills/pump-fun/create-coin/SKILL.md",
+    "package_path": "skills/create-coin/SKILL.md",
     "group": "pump-fun",
     "sha256": "bf5581c14872df3c67b95551a862879c3d83503a85de349de0b1b7cd8a086e65"
   },
   {
-    "skill": "pump-fun/interacting",
+    "skill": "interacting",
     "frontmatter_name": "interacting",
     "description": "Load this skill when building PumpKit bots or looking up pump.fun protocol docs.",
-    "package_path": "skills/pump-fun/interacting/SKILL.md",
+    "package_path": "skills/interacting/SKILL.md",
     "group": "pump-fun",
     "sha256": "5152e5e4db426d7301b9fb8f3a02a0c44445d966e0bf0234890b62cbb0d77aa6"
   },
   {
-    "skill": "pump-fun/swap",
+    "skill": "swap",
     "frontmatter_name": "swap",
     "description": "**MANDATORY \u2014 Do NOT write or modify any code until every item below is answered by the user:**",
-    "package_path": "skills/pump-fun/swap/SKILL.md",
+    "package_path": "skills/swap/SKILL.md",
     "group": "pump-fun",
     "sha256": "590e59177bfc598825bd5b8c574ee755940767d0e7ad9a77acb085a84590f5af"
   },
   {
-    "skill": "pump-fun/tokenized-agents",
+    "skill": "tokenized-agents",
     "frontmatter_name": "tokenized-agents",
     "description": "**MANDATORY \u2014 Do NOT write or modify any code until every item below is answered by the user:**",
-    "package_path": "skills/pump-fun/tokenized-agents/SKILL.md",
+    "package_path": "skills/tokenized-agents/SKILL.md",
     "group": "pump-fun",
     "sha256": "f9d97618977bb1507171056b231ce54b2b748d0992bca2dfa862fdb5baaf3b52"
   },
@@ -1008,10 +1008,10 @@
     "sha256": "149814cf18e17f807465eff1a4093f59cf4ff861ce4c80237067f863bd80c9e8"
   },
   {
-    "skill": "zk-omni-messaging/zkrouter",
+    "skill": "zkrouter",
     "frontmatter_name": "zkrouter",
     "description": "Self-hosted OpenAI-compatible LLM router \u2014 smart tier-based routing, ZK-stamped routing decisions, mode overrides, free OpenRouter at install via the Birth bot. Save 60-80% on inference costs by routing to the cheapest capable model across 12+ OpenRouter models.",
-    "package_path": "skills/zk-omni-messaging/zkrouter/SKILL.md",
+    "package_path": "skills/zkrouter/SKILL.md",
     "group": "zk-omni-messaging",
     "sha256": "cadeb2234cc89487c144306084684fdbdec1b40a8e88f4f95d2d13d28144ec3d"
   },

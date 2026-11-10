@@ -10,12 +10,13 @@ repo name wins.
 
 ## What exists locally
 
-- `.claude-plugin/marketplace.json` — marketplace name `clawd`, owner
-  Clawd. Metadata version `1.0.0` after the rename from `musebook` (2026-11-10).
-  Install suffix is `@clawd`.
+- `.claude-plugin/marketplace.json` — marketplace name `percolator`, owner
+  cheshire. Metadata version `2.0.0` after the rename from `clawd` (2026-11-10).
+  The earlier rename from `musebook` to `clawd` was metadata `1.0.0`.
+  Install suffix is `@percolator`.
 - `plugins/` — the original six (`musebook-directory`, `musebook-launches`,
   `musebook-markets`, `musebook-paper`, `musebook-chess`, `musebook-x402`)
-  plus `clawd-percolator-connected` (v0.7.0, updated 2026-11-10 from
+  plus `percolator` (package v0.7.0, updated 2026-11-10 from
   `clawd-percolator-connected-v0.7.0-rc1`: assets, docs, examples, skills,
   README, CHANGELOG, `plugin.json`, `mcp.json`). The six Musebook plugins each have
   `.claude-plugin/plugin.json` (v0.1.0), `.mcp.json` →

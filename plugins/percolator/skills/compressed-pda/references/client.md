@@ -64,7 +64,7 @@ light-sdk = "0.23.0"
 
 #### RPC connection
 
-Connect to an RPC provider that supports ZK Compression (Helius, Triton).
+Connect to an RPC provider that supports ZK Compression (Helius, Triton). The payer path is `${user_config.solana_keypair}`. Do not open a keypair from the home directory. The RPC key is `${user_config.rpc_api_key}`.
 
 **Mainnet:**
 ```rust
@@ -74,7 +74,7 @@ let config = LightClientConfig::new(
     Some("YOUR_API_KEY".to_string())
 );
 let mut client = LightClient::new(config).await?;
-client.payer = read_keypair_file("~/.config/solana/id.json")?;
+client.payer = read_keypair_file(solana_keypair_path)?;
 ```
 
 **Devnet:**
@@ -84,14 +84,14 @@ let config = LightClientConfig::devnet(
     Some("YOUR_API_KEY".to_string())
 );
 let mut client = LightClient::new(config).await?;
-client.payer = read_keypair_file("~/.config/solana/id.json")?;
+client.payer = read_keypair_file(solana_keypair_path)?;
 ```
 
 **Localnet:**
 ```rust
 let config = LightClientConfig::local();
 let mut client = LightClient::new(config).await?;
-client.payer = read_keypair_file("~/.config/solana/id.json")?;
+client.payer = read_keypair_file(solana_keypair_path)?;
 ```
 
 ## Address derivation

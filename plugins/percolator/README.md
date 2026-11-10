@@ -1,6 +1,6 @@
-# CLAWD Percolator Connected v0.7.0 release candidate
+# Percolator v0.7.0
 
-# CLAWD Tools & Wallets + Percolator — clawd-percolator-connected v0.6.0
+# Percolator
 
 Combined update of the private PumpAI Connected v0.2.0 package with Percolator and Imperial research. Musebook is the provider; Clawd is the mascot. Default mode is **read-only**. Devnet / Clawd Chain testnet first. No promises of returns. This package does not imply any affiliation with Solana Labs or with any third-party launchpad.
 
@@ -174,13 +174,13 @@ Live trading, launch, and order skills in this package are read-only or dry-run 
 These paths are cited in owner skill text but were not in the skill bundle (they were not invented or filled in):
 
 - Vulcan pack: 18 skills point at `../../vulcan-cli-master/...`, which is not in this package.
-- `pump-fun/interacting`: many links into a larger upstream docs tree (tutorials, bonding-curve math, SECURITY.md, and related pages).
+- `interacting`: many links into a larger upstream docs tree (tutorials, bonding-curve math, SECURITY.md, and related pages).
 - `pump-shell-scripts/SKILL.md`: five missing scripts (`utils.sh`, `generate-vanity.sh`, `batch-generate.sh`, `verify-keypair.sh`, `test-rust.sh`).
 - `deployer`: missing `docs/TechnicalDocumentation.md`, `DeploymentGuide.md`, `assets/whitepaper.pdf`, and `audits/README.md`.
 - Several `dflow-*` skills link to `../../README.md` (the monorepo root, not in this package).
 - `cheshire-omni-mint`: missing `docs/OMNI_MINT.md` and `docs/ZK_OMNI.md`; `cheshire-api`: missing `docs/cheshire-terminal-api.md`.
 - `pay-with-any-token` and `pay-with-app` link to `../swap-integration/SKILL.md` (not in this package).
-- `agent-orchestration/cmux`: missing `references/socket-api.md`.
+- `cmux`: missing `references/socket-api.md`.
 - `rh-launchpad-v3`: missing `docs/v3-pool-from-launch.md`.
 - `compressed-pda` `error-codes.md`: absolute `/resources/...` link.
 

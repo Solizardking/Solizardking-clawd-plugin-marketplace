@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "percolator",
+  "version": "0.7.0",
+  "description": "Percolator: PumpAI launch tools, Bubbles intelligence guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle. Includes unified backend design, owner-signed Imperial trade policy, and Phoenix read-only adapter guidance. Production write access stays disabled pending deployment and security review.",
+  "homepage": "https://pumpai.ai",
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://musebook.trade/privacy",
+  "author": {
+    "name": "cheshire"
+  },
+  "keywords": [
+    "pumpai",
+    "solana",
+    "bubblemaps",
+    "composio",
+    "open-wallet-standard",
+    "wallet",
+    "percolator",
+    "imperial",
+    "musebook",
+    "perps"
+  ],
+  "userConfig": {
+    "rpc_api_key": {
+      "type": "string",
+      "title": "RPC API key",
+      "description": "Helius or Triton RPC key for devnet or mainnet compressed-account examples. Not used on localnet. Enter it here. Do not read it from the environment.",
+      "sensitive": true,
+      "required": false
+    },
+    "solana_keypair": {
+      "type": "string",
+      "title": "Solana keypair path",
+      "description": "Path to a Solana keypair file you choose for devnet or mainnet examples. The plugin does not look in your home directory.",
+      "sensitive": true,
+      "required": false
+    },
+    "uniswap_api_key": {
+      "type": "string",
+      "title": "Uniswap API key",
+      "description": "Uniswap Trading API key for 402 funding flows. Enter it here. Do not read UNISWAP_API_KEY from the environment.",
+      "sensitive": true,
+      "required": false
+    },
+    "source_private_key": {
+      "type": "string",
+      "title": "Source wallet private key",
+      "description": "Optional hex key for 402 signing when cast wallet import is not used. Enter it here for this session. Do not read PRIVATE_KEY from the environment or from disk.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

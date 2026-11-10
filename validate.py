@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the Clawd Claude plugin marketplace (stdlib only).
+"""Validate the Percolator Claude plugin marketplace (stdlib only).
 
 Checks:
   1. Every *.json file in the repo parses as JSON.

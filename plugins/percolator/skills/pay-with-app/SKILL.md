@@ -12,7 +12,6 @@ description: >
   challenge whose network resolves to X Layer (chain 196). For 402
   challenges on other chains (Ethereum, Base, Arbitrum, Tempo) use
   pay-with-any-token instead.
-allowed-tools: Read, Glob, Grep, Bash(curl:*), Bash(jq:*), Bash(cast:*), Bash(openssl:*), Bash(npx:*), Bash(node:*), WebFetch, AskUserQuestion
 model: opus
 license: MIT
 metadata:

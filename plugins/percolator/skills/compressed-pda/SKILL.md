@@ -6,10 +6,7 @@ metadata:
   documentation: https://www.zkcompression.com
   openclaw:
     requires:
-      env: ["API_KEY"]  # Helius or Triton RPC key; only needed for devnet/mainnet
-      config: ["~/.config/solana/id.json"]  # Solana keypair; only needed for devnet/mainnet
       bins: ["node", "solana", "anchor", "cargo", "light"]
-allowed-tools: Bash(git:*), Bash(cargo:*), Bash(anchor:*), Bash(light:*), Read, Edit, Glob, Grep, Write, Task, WebFetch, WebSearch, mcp__deepwiki__ask_question
 ---
 
 # Compressed PDA Programs
@@ -167,7 +164,7 @@ mcp__deepwiki__ask_question("Lightprotocol/light-protocol", "How to {operation}?
 
 This skill provides code patterns and documentation references only.
 
-- **Declared dependencies.** Devnet and mainnet examples require `API_KEY` (Helius or Triton RPC key) and read `~/.config/solana/id.json` for the payer keypair. Neither is needed on localnet. In production, load both from a secrets manager.
+- **Declared dependencies.** Devnet and mainnet examples use the RPC key from `${user_config.rpc_api_key}` and the keypair path from `${user_config.solana_keypair}`. Neither is needed on localnet. Do not read an API key from the environment, and do not open a keypair from the home directory.
 - **Filesystem scope.** `Read`, `Glob`, and `Grep` must be limited to the current project directory and the [reference repos](#reference-repos) listed above. Do not read outside these paths.
 - **Subagent scope.** When stuck, the skill asks to spawn a read-only subagent with `Read`, `Glob`, `Grep` scoped to skill references, example repos, and docs.
 - **Install source.** `npx skills add Lightprotocol/skills` from [Lightprotocol/skills](https://github.com/Lightprotocol/skills).

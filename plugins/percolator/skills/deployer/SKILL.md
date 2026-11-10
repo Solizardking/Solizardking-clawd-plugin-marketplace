@@ -1,7 +1,6 @@
 ---
 name: deployer
 description: Deploy CCA (Continuous Clearing Auction) smart contracts using the Factory pattern. Use when user says "deploy auction", "deploy cca", "factory deployment", or wants to deploy a configured auction.
-allowed-tools: Read, Glob, Grep, Bash(forge:*), Bash(cast:*), Bash(curl:*), AskUserQuestion
 model: opus
 license: MIT
 metadata:

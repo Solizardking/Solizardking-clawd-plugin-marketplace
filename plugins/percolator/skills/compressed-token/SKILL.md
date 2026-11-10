@@ -6,10 +6,7 @@ metadata:
   documentation: https://www.zkcompression.com
   openclaw:
     requires:
-      env: ["API_KEY"]
-      config: ["~/.config/solana/id.json"]
       bins: ["node"]
-allowed-tools: Bash(git:*), Bash(node:*), Bash(npm:*), Read, Edit, Glob, Grep, Write, Task, WebFetch, WebSearch, mcp__deepwiki__ask_question
 ---
 
 # Compressed token client
@@ -43,7 +40,7 @@ Each mint supports a maximum of 4 interface PDAs. They get write-locked during c
 
 ## Prerequisites
 
-Examples run on localnet by default. For devnet or mainnet, set the `API_KEY` env var (Helius or Triton RPC key) and provide a Solana keypair at `~/.config/solana/id.json`. In production, load both from a secrets manager.
+Examples run on localnet by default. For devnet or mainnet, use the RPC key `${user_config.rpc_api_key}` (Helius or Triton) and the keypair path `${user_config.solana_keypair}`. Do not read an API key from the environment, and do not open a keypair from the home directory.
 
 ```typescript
 import { createRpc } from '@lightprotocol/stateless.js';
@@ -52,7 +49,7 @@ import { createRpc } from '@lightprotocol/stateless.js';
 const rpc = createRpc();
 
 // Devnet or mainnet:
-const rpc = createRpc(`https://devnet.helius-rpc.com?api-key=${process.env.API_KEY!}`);
+const rpc = createRpc(`https://devnet.helius-rpc.com?api-key=${user_config.rpc_api_key}`);
 ```
 
 ## Domain references
@@ -121,7 +118,7 @@ If no matching pattern in the reference repos, ask `mcp__deepwiki__ask_question`
 
 This skill provides code patterns and documentation references only.
 
-- **Declared dependencies.** Devnet and mainnet examples require `API_KEY` (Helius or Triton RPC key) and read `~/.config/solana/id.json` for the payer keypair. Neither is needed on localnet. In production, load both from a secrets manager.
+- **Declared dependencies.** Devnet and mainnet examples use `${user_config.rpc_api_key}` and `${user_config.solana_keypair}`. Neither is needed on localnet. Do not read an API key from the environment, and do not open a keypair from the home directory.
 - **User-provided configuration.** RPC endpoints, wallet keypairs, and tokens are configured in the user's application code. The skill demonstrates patterns; it does not store or transmit secrets.
 - **Filesystem scope.** `Read`, `Glob`, `Grep` must stay within the current project directory and the reference repos above.
 - **Install source.** `npx skills add Lightprotocol/skills` installs from the public GitHub repository ([Lightprotocol/skills](https://github.com/Lightprotocol/skills)). Verify the source before running.

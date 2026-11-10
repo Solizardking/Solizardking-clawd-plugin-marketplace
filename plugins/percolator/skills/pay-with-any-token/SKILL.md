@@ -6,7 +6,6 @@ description: >
   needs to fulfill a machine payment, mentions "MPP", "Tempo payment", "pay for
   API access", "HTTP 402", "x402", "machine payment protocol",
   "pay-with-any-token", "use tempo", "tempo request", or "tempo wallet".
-allowed-tools: Read, Glob, Grep, Bash(curl:*), Bash(jq:*), Bash(cast:*), Bash(tempo:*), Bash(*/.local/bin/tempo:*), WebFetch, AskUserQuestion
 model: opus
 license: MIT
 metadata:

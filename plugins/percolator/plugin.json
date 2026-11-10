@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "clawd-percolator-connected",
+  "name": "percolator",
   "version": "0.7.0",
   "description": "CLAWD Tools & Wallets plus Percolator: PumpAI launch tools, Bubbles intelligence guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle (Imperial pack and the remaining cheshire, clawd, pump/pumpfun, dflow, vulcan, pay, zk, and general agent-tooling skills). Includes CLAWD unified backend design, owner-signed Imperial trade policy and Phoenix read-only adapter integration guidance. Production write access remains disabled pending deployment and security review.",
   "homepage": "https://pumpai.ai",
@@ -10,7 +10,6 @@
     "name": "cheshire"
   },
   "keywords": [
-    "clawd",
     "pumpai",
     "solana",
     "bubblemaps",
@@ -25,7 +24,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "CLAWD Tools & Wallets + Percolator",
+        "displayName": "Percolator",
         "shortDescription": "CLAWD perps, research & safe wallets",
         "longDescription": "Source-backed CLAWD Percolator package with Imperial, Phoenix, OWS and PumpAI skills; live trades are deny-by-default and production gateway is not yet deployed. Secret keys stay user-controlled.",
         "developerName": "cheshire",

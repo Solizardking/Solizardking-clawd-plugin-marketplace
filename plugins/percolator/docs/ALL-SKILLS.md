@@ -428,113 +428,113 @@ Entry-point router for the local Pump.fun skill suite. Use when the user asks ab
 
 ## agent-orchestration (7)
 
-### `agent-orchestration/agent-self-scheduling`
-**Path:** `skills/agent-orchestration/agent-self-scheduling/SKILL.md`. **Manifest name:** `agent-self-scheduling`.
+### `agent-self-scheduling`
+**Path:** `skills/agent-self-scheduling/SKILL.md`. **Manifest name:** `agent-self-scheduling`.
 Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for "run every N minutes", "schedule a task", "run on a loop", "heartbeat". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.
 
-### `agent-orchestration/cmux`
-**Path:** `skills/agent-orchestration/cmux/SKILL.md`. **Manifest name:** `cmux`.
+### `cmux`
+**Path:** `skills/cmux/SKILL.md`. **Manifest name:** `cmux`.
 MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or r
 
-### `agent-orchestration/codex-subagent`
-**Path:** `skills/agent-orchestration/codex-subagent/SKILL.md`. **Manifest name:** `codex-subagent`.
+### `codex-subagent`
+**Path:** `skills/codex-subagent/SKILL.md`. **Manifest name:** `codex-subagent`.
 Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass.
 
-### `agent-orchestration/fable-safe-prompt`
-**Path:** `skills/agent-orchestration/fable-safe-prompt/SKILL.md`. **Manifest name:** `fable-safe-prompt`.
+### `fable-safe-prompt`
+**Path:** `skills/fable-safe-prompt/SKILL.md`. **Manifest name:** `fable-safe-prompt`.
 Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason "refusal"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use top
 
-### `agent-orchestration/goal-loop`
-**Path:** `skills/agent-orchestration/goal-loop/SKILL.md`. **Manifest name:** `goal-loop`.
+### `goal-loop`
+**Path:** `skills/goal-loop/SKILL.md`. **Manifest name:** `goal-loop`.
 Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, "goal loop", "Ralph loop", wants to kick off a long-running auto
 
-### `agent-orchestration/handoff`
-**Path:** `skills/agent-orchestration/handoff/SKILL.md`. **Manifest name:** `handoff`.
+### `handoff`
+**Path:** `skills/handoff/SKILL.md`. **Manifest name:** `handoff`.
 Compact the current conversation into a single, detailed handoff message — everything that happened, why it happened, and what's left — output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task ac
 
-### `agent-orchestration/run-deep-swe`
-**Path:** `skills/agent-orchestration/run-deep-swe/SKILL.md`. **Manifest name:** `run-deep-swe`.
+### `run-deep-swe`
+**Path:** `skills/run-deep-swe/SKILL.md`. **Manifest name:** `run-deep-swe`.
 Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — "run DeepSWE", "benchmark this model on DeepSWE", "score model X on the coding benchmark", "test a model via OpenRouter on DeepSWE", or to verify vendor-rep
 
 ## clawd-pump-agent-skills (13)
 
-### `clawd-pump-agent-skills/skills/alpha-scanner`
-**Path:** `skills/clawd-pump-agent-skills/skills/alpha-scanner/SKILL.md`. **Manifest name:** `alpha-scanner`.
+### `alpha-scanner`
+**Path:** `skills/alpha-scanner/SKILL.md`. **Manifest name:** `alpha-scanner`.
 Scan Solana for early trading opportunities (new launches, unusual volume, social catalysts, and smart-money flow) and present structured alpha reports. Use when hunting early token signals. Not a buy recommendation.
 
-### `clawd-pump-agent-skills/skills/clawhunter-bounties`
-**Path:** `skills/clawd-pump-agent-skills/skills/clawhunter-bounties/SKILL.md`. **Manifest name:** `clawhunter-bounties`.
+### `clawhunter-bounties`
+**Path:** `skills/clawhunter-bounties/SKILL.md`. **Manifest name:** `clawhunter-bounties`.
 Claw Hunter is an HTTP API over crowdsourced crypto bounties aggregated from
 
-### `clawd-pump-agent-skills/skills/clawhunter-content-studio`
-**Path:** `skills/clawd-pump-agent-skills/skills/clawhunter-content-studio/SKILL.md`. **Manifest name:** `clawhunter-content-studio`.
+### `clawhunter-content-studio`
+**Path:** `skills/clawhunter-content-studio/SKILL.md`. **Manifest name:** `clawhunter-content-studio`.
 Claw's agent tools for producing social/crypto content — text, images, video
 
-### `clawd-pump-agent-skills/skills/clawpump`
-**Path:** `skills/clawd-pump-agent-skills/skills/clawpump/SKILL.md`. **Manifest name:** `clawpump`.
+### `clawpump`
+**Path:** `skills/clawpump/SKILL.md`. **Manifest name:** `clawpump`.
 ClawPump on Solana — create/chat with agents, trade, perps, DCA, lend, launch tokens, marketplace, predictions, gift cards, agent email, intelligence via mcp_clawpump_* tools. Use when the user mentions ClawPump, launching a token, an agent's wallet/balance, swaps, perps, gift cards, agent email, or DeFi on S
 
-### `clawd-pump-agent-skills/skills/dca-strategy`
-**Path:** `skills/clawd-pump-agent-skills/skills/dca-strategy/SKILL.md`. **Manifest name:** `dca-strategy`.
+### `dca-strategy`
+**Path:** `skills/dca-strategy/SKILL.md`. **Manifest name:** `dca-strategy`.
 Plan and execute dollar-cost averaging into a Solana token on a budget, frequency, and duration, with per-interval reporting and a weekly summary. Use when the user wants a recurring buy plan.
 
-### `clawd-pump-agent-skills/skills/dex-pools`
-**Path:** `skills/clawd-pump-agent-skills/skills/dex-pools/SKILL.md`. **Manifest name:** `dex-pools`.
+### `dex-pools`
+**Path:** `skills/dex-pools/SKILL.md`. **Manifest name:** `dex-pools`.
 Solana DEX liquidity, OHLCV candles, and venue discovery for any token/pool via GeckoTerminal (keyless). Use to sanity-check swap slippage, find the deepest venue, and read price history.
 
-### `clawd-pump-agent-skills/skills/laso-finance`
-**Path:** `skills/clawd-pump-agent-skills/skills/laso-finance/SKILL.md`. **Manifest name:** `laso-finance`.
+### `laso-finance`
+**Path:** `skills/laso-finance/SKILL.md`. **Manifest name:** `laso-finance`.
 Order and manage Laso Finance wallet cards, gift cards, push-to-card payouts, and account state on Solana. Quote first, then wait for explicit approval before any paid order or secret reveal.
 
-### `clawd-pump-agent-skills/skills/meme-analyzer`
-**Path:** `skills/clawd-pump-agent-skills/skills/meme-analyzer/SKILL.md`. **Manifest name:** `meme-analyzer`.
+### `meme-analyzer`
+**Path:** `skills/meme-analyzer/SKILL.md`. **Manifest name:** `meme-analyzer`.
 Structured Solana meme-token analysis covering liquidity, holder distribution, social sentiment, rug-pull red flags, and a 0-100 score. Use when the user asks to analyze a meme token. Not financial advice.
 
-### `clawd-pump-agent-skills/skills/risk-manager`
-**Path:** `skills/clawd-pump-agent-skills/skills/risk-manager/SKILL.md`. **Manifest name:** `risk-manager`.
+### `risk-manager`
+**Path:** `skills/risk-manager/SKILL.md`. **Manifest name:** `risk-manager`.
 Pre-trade risk checks for position sizing, concentration, drawdown, and liquidity, returning a 1-10 score and a proceed, reduce, review, or block recommendation. Use before significant swaps.
 
-### `clawd-pump-agent-skills/skills/rug-check`
-**Path:** `skills/clawd-pump-agent-skills/skills/rug-check/SKILL.md`. **Manifest name:** `rug-check`.
+### `rug-check`
+**Path:** `skills/rug-check/SKILL.md`. **Manifest name:** `rug-check`.
 Solana token safety diligence: mint/freeze authority, LP lock/burn, top-holder concentration, RugCheck score. Read-only — run before swapping into or launching alongside any token.
 
-### `clawd-pump-agent-skills/skills/straight-talk`
-**Path:** `skills/clawd-pump-agent-skills/skills/straight-talk/SKILL.md`. **Manifest name:** `straight-talk`.
+### `straight-talk`
+**Path:** `skills/straight-talk/SKILL.md`. **Manifest name:** `straight-talk`.
 Turn an agent trade, launch, hold, or flat day into an honest public SOAG post with no price promises and a trap flag when needed. Use when writing social posts about trading activity.
 
-### `clawd-pump-agent-skills/skills/survivor-check`
-**Path:** `skills/clawd-pump-agent-skills/skills/survivor-check/SKILL.md`. **Manifest name:** `survivor-check`.
+### `survivor-check`
+**Path:** `skills/survivor-check/SKILL.md`. **Manifest name:** `survivor-check`.
 Judge whether a Solana token has earned trust by surviving (age, liquidity still present, two-sided volume) or is a trap, and return a survivor, wait, or trap verdict. Use before buying.
 
-### `clawd-pump-agent-skills/skills/whale-tracker`
-**Path:** `skills/clawd-pump-agent-skills/skills/whale-tracker/SKILL.md`. **Manifest name:** `whale-tracker`.
+### `whale-tracker`
+**Path:** `skills/whale-tracker/SKILL.md`. **Manifest name:** `whale-tracker`.
 Monitor and interpret large Solana wallet movements (accumulation, exits, and net flow) while excluding protocol and exchange addresses. Use when the user asks what whales are doing.
 
 ## pump-fun (5)
 
-### `pump-fun/coin-fees`
-**Path:** `skills/pump-fun/coin-fees/SKILL.md`. **Manifest name:** `coin-fees`.
+### `coin-fees`
+**Path:** `skills/coin-fees/SKILL.md`. **Manifest name:** `coin-fees`.
 **MANDATORY — Do NOT write or modify any code until every item below is answered by the user:**
 
-### `pump-fun/create-coin`
-**Path:** `skills/pump-fun/create-coin/SKILL.md`. **Manifest name:** `create-coin`.
+### `create-coin`
+**Path:** `skills/create-coin/SKILL.md`. **Manifest name:** `create-coin`.
 **MANDATORY — Do NOT write or modify any code until every item below is answered by the user:**
 
-### `pump-fun/interacting`
-**Path:** `skills/pump-fun/interacting/SKILL.md`. **Manifest name:** `interacting`.
+### `interacting`
+**Path:** `skills/interacting/SKILL.md`. **Manifest name:** `interacting`.
 Load this skill when building PumpKit bots or looking up pump.fun protocol docs.
 
-### `pump-fun/swap`
-**Path:** `skills/pump-fun/swap/SKILL.md`. **Manifest name:** `swap`.
+### `swap`
+**Path:** `skills/swap/SKILL.md`. **Manifest name:** `swap`.
 **MANDATORY — Do NOT write or modify any code until every item below is answered by the user:**
 
-### `pump-fun/tokenized-agents`
-**Path:** `skills/pump-fun/tokenized-agents/SKILL.md`. **Manifest name:** `tokenized-agents`.
+### `tokenized-agents`
+**Path:** `skills/tokenized-agents/SKILL.md`. **Manifest name:** `tokenized-agents`.
 **MANDATORY — Do NOT write or modify any code until every item below is answered by the user:**
 
 ## zk-omni-messaging (1)
 
-### `zk-omni-messaging/zkrouter`
-**Path:** `skills/zk-omni-messaging/zkrouter/SKILL.md`. **Manifest name:** `zkrouter`.
+### `zkrouter`
+**Path:** `skills/zkrouter/SKILL.md`. **Manifest name:** `zkrouter`.
 Self-hosted OpenAI-compatible LLM router — smart tier-based routing, ZK-stamped routing decisions, mode overrides, free OpenRouter at install via the Birth bot. Save 60-80% on inference costs by routing to the cheapest capable model across 12+ OpenRouter models.
 

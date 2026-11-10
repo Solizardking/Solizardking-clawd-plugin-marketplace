@@ -1,12 +1,12 @@
 {
-  "name": "clawd",
+  "name": "percolator",
   "owner": {
-    "name": "Clawd",
+    "name": "cheshire",
     "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "The Clawd plugin marketplace for Claude Code / Claude: public read-only plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery, plus clawd-percolator-connected (PumpAI, Bubblemaps docs, Percolator and Imperial research skills).",
-    "version": "1.0.0",
+    "description": "The Percolator plugin marketplace for Claude Code / Claude: public read-only plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery, plus percolator (PumpAI, Bubblemaps docs, Percolator and Imperial research skills).",
+    "version": "2.0.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -131,9 +131,9 @@
       "strict": false
     },
     {
-      "name": "clawd-percolator-connected",
-      "source": "./plugins/clawd-percolator-connected",
-      "description": "CLAWD Tools & Wallets plus Percolator: PumpAI launch tools, Bubblemaps documentation guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle. Includes CLAWD unified backend design, owner-signed Imperial trade policy, and Phoenix read-only adapter guidance. Production write access stays disabled pending deployment and security review.",
+      "name": "percolator",
+      "source": "./plugins/percolator",
+      "description": "Percolator: PumpAI launch tools, Bubblemaps documentation guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle. Includes unified backend design, owner-signed Imperial trade policy, and Phoenix read-only adapter guidance. Production write access stays disabled pending deployment and security review.",
       "version": "0.7.0",
       "author": {
         "name": "cheshire",
@@ -141,7 +141,6 @@
       },
       "homepage": "https://pumpai.ai",
       "keywords": [
-        "clawd",
         "pumpai",
         "solana",
         "percolator",
