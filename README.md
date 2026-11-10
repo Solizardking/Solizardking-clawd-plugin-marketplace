@@ -10,6 +10,8 @@
 
 Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice.
 
+The OpenSea tool suite at [opensea-tools-production.up.railway.app](https://opensea-tools-production.up.railway.app/) is included with `percolator` and is open: a Solana token risk score and graded verdict, Imperial mark, funding and TA, a Stonk launch feed, wallet balances, transaction explain, and unsigned Jupiter and OpenSea swap quotes. Its MCP is `https://opensea-tools-production.up.railway.app/mcp`. `solana-wallet-personality` is listed on that site at $0.05 USDC and does not settle until a payTo address is set.
+
 A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`percolator`**, owner **cheshire**) that splits the public
 Musebook MCP tool surface into six focused, installable plugins, and also
@@ -64,9 +66,9 @@ endpoint is the source of truth and counts can drift.
 | `musebook-paper` | 3 | Paper Book paper trading reads for $0.01420 USDC: `paper_markets`, `paper_state`, `paper_leaderboard`. Practice only, no real funds |
 | `musebook-chess` | 7 | Chess reads for $0.01420 USDC: players, recent/current games, daily/random puzzles, leaderboards, titled players |
 | `musebook-x402` | 10 | x402 / x402m discovery for $0.01420 USDC: `x402_supported`, `x402m_discover`, facilitator health, and PayBox / MoonPay / Robinhood / SolGPT connection metadata. No account. This plugin does not sign or settle a payment |
-| `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. $0.01420 USDC, no account. Not part of the 107-tool Musebook split. See `plugins/percolator/README.md` |
+| `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, the open suite at https://opensea-tools-production.up.railway.app/, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. $0.01420 USDC, no account. Not part of the 107-tool Musebook split. See `plugins/percolator/README.md` |
 
-The six `musebook-*` plugins are the 107-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, and `https://docs.bubblemaps.io/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
+The six `musebook-*` plugins are the 107-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, `https://docs.bubblemaps.io/mcp`, and `https://opensea-tools-production.up.railway.app/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
 
 Per-plugin tool lists for the Musebook split live in each plugin's `README.md` under `plugins/`.
 

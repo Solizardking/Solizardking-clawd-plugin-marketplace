@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "percolator",
   "version": "0.7.0",
-  "description": "Research Solana launches and perp markets for $0.01420 USDC, no account. PumpAI launch tools, Bubblemaps documentation, read-only Percolator and Imperial market guidance, and the owner skill bundle. Default mode is read-only. Production writes stay off.",
+  "description": "Research Solana launches and perp markets for $0.01420 USDC, no account. PumpAI launch tools, Bubblemaps documentation, read-only Percolator and Imperial market guidance, and the owner skill bundle. Includes the open tool suite at https://opensea-tools-production.up.railway.app/. Default mode is read-only. Production writes stay off. Nothing is signed.",
   "homepage": "https://pumpai.ai",
   "icon": ".claude-plugin/icon.png",
   "privacyPolicyUrl": "https://musebook.trade/privacy",
@@ -26,7 +26,7 @@
       "interface": {
         "displayName": "Percolator",
         "shortDescription": "Solana launch and perp research, $0.01420 USDC",
-        "longDescription": "PumpAI launch tools, Bubblemaps documentation, and read-only Percolator and Imperial market guidance, plus the owner skill bundle. $0.01420 USDC, no account. Live trades stay deny-by-default. Production writes stay off. Secret keys stay with the user.",
+        "longDescription": "PumpAI launch tools, Bubblemaps documentation, and read-only Percolator and Imperial market guidance, plus the owner skill bundle. Includes the open suite at https://opensea-tools-production.up.railway.app/. $0.01420 USDC, no account. Live trades stay deny-by-default. Production writes stay off. Secret keys stay with the user. Nothing is signed.",
         "developerName": "cheshire",
         "category": "Finance",
         "websiteURL": "https://pumpai.ai",

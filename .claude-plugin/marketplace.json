@@ -5,7 +5,7 @@
     "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
+    "description": "Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice. The OpenSea tool suite at https://opensea-tools-production.up.railway.app/ is included and open: a Solana token risk score and graded verdict, Imperial mark, funding and TA, a Stonk launch feed, wallet balances, transaction explain, and unsigned Jupiter and OpenSea swap quotes. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
     "version": "2.0.0",
     "pluginRoot": "./plugins"
   },
@@ -133,7 +133,7 @@
     {
       "name": "percolator",
       "source": "./plugins/percolator",
-      "description": "Research Solana launches and perp markets for $0.01420 USDC, no account. PumpAI launch tools, Bubblemaps documentation, read-only Percolator and Imperial market guidance, and the owner skill bundle. Default mode is read-only. Production writes stay off.",
+      "description": "Research Solana launches and perp markets for $0.01420 USDC, no account. PumpAI launch tools, Bubblemaps documentation, read-only Percolator and Imperial market guidance, and the owner skill bundle. Includes the open tool suite at https://opensea-tools-production.up.railway.app/. Default mode is read-only. Production writes stay off. Nothing is signed.",
       "version": "0.7.0",
       "author": {
         "name": "cheshire",

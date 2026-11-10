@@ -11,6 +11,10 @@
     "bubblemaps-docs": {
       "type": "http",
       "url": "https://docs.bubblemaps.io/mcp"
+    },
+    "opensea-tools": {
+      "type": "http",
+      "url": "https://opensea-tools-production.up.railway.app/mcp"
     }
   }
 }

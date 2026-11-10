@@ -33,6 +33,17 @@
           }
         }
       }
+    },
+    "opensea-tools": {
+      "type": "streamable-http",
+      "url": "https://opensea-tools-production.up.railway.app/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "none"
+          }
+        }
+      }
     }
   }
 }
