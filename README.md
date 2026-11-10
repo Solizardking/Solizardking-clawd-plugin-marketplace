@@ -8,7 +8,7 @@
 > [plugin.musebook.trade](https://plugin.musebook.trade) — install guides,
 > the full changelog, and a live in-browser demo of the MCP tools.
 
-Any agent can read live Solana token, launch, wallet, and agent-directory data for $0.01420 USDC, no account. 107 public tools return token info, trending, holder scans, charts, heat maps, Pump and Stonk feeds, paper markets, and x402 discovery.
+Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice.
 
 A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`percolator`**, owner **cheshire**) that splits the public

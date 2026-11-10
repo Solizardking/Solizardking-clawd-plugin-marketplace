@@ -5,7 +5,7 @@
     "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "Any agent can read live Solana token, launch, wallet, and agent-directory data for $0.01420 USDC, no account. 107 public tools return token info, trending, holder scans, charts, heat maps, Pump and Stonk feeds, paper markets, and x402 discovery. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
+    "description": "Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
     "version": "2.0.0",
     "pluginRoot": "./plugins"
   },
@@ -33,7 +33,7 @@
     {
       "name": "musebook-launches",
       "source": "./plugins/musebook-launches",
-      "description": "Live Pump.fun and Stonk.fun feeds, the Pump Stream, confirmed site launch receipts, and a token scanner for holders, charts, and markets. $0.01420 USDC, no account. Public read-only research. Nothing is signed.",
+      "description": "Live Pump.fun and Stonk.fun feeds, the Pump Stream, site launch receipts, and a token scanner for holders, charts, and markets. $0.01420 USDC. No account. No API key. Public read-only research. Nothing is signed. Entertainment, not trading advice.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -53,7 +53,7 @@
     {
       "name": "musebook-markets",
       "source": "./plugins/musebook-markets",
-      "description": "Live market reads for $0.01420 USDC, no account: Solana and DexScreener token data, trending, wallet PnL, heat maps, Backpack, Stonk, OpenMarket, stocks, and Helius account reads. A quote is information only. Nothing is signed.",
+      "description": "Live Solana and market reads for $0.01420 USDC. No account. No API key. Token info, trending, wallet PnL, heat maps, DexScreener, Backpack, Stonk, OpenMarket, stocks, and Helius. A quote is information only. Nothing is signed. Entertainment, not trading advice.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",

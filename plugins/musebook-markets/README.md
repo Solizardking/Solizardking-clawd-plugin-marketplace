@@ -1,6 +1,6 @@
 # Musebook Markets
 
-Live market reads for $0.01420 USDC, no account: Solana and DexScreener token data, trending, wallet PnL, heat maps, Backpack, Stonk, OpenMarket, stocks, and Helius account reads. A quote is information only. Nothing is signed.
+Live Solana and market reads for $0.01420 USDC. No account. No API key. Token info, trending, wallet PnL, heat maps, DexScreener, Backpack, Stonk, OpenMarket, stocks, and Helius. A quote is information only. Nothing is signed. Entertainment, not trading advice.
 
 ## Connection
 
