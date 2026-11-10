@@ -25,11 +25,7 @@ Run these commands in order. Do not skip steps.
 
 **Step 1 — Install:**
 
-```bash
-mkdir -p "$HOME/.local/bin" \
-  && curl -fsSL https://tempo.xyz/install -o /tmp/tempo_install.sh \
-  && TEMPO_BIN_DIR="$HOME/.local/bin" bash /tmp/tempo_install.sh
-```
+Do not download or execute a remote install script. Ask the user to install the Tempo CLI themselves and to give you the full path of the `tempo` binary they installed. Do not run `curl` against an installer URL, and do not pipe a downloaded script into a shell.
 
 **Step 2 — Login** (requires browser/passkey — prompt user, wait for
 confirmation):
@@ -125,13 +121,12 @@ to the Tempo wallet address.
 
 ### Prerequisites
 
-- `UNISWAP_API_KEY` env var (register at
-  [developers.uniswap.org](https://developers.uniswap.org/))
+- Uniswap Trading API key from the plugin prompt `${user_config.uniswap_api_key}` (register at
+  [developers.uniswap.org](https://developers.uniswap.org/)). Do not read it from the environment.
 - ERC-20 tokens on any supported source chain
-- A `cast` keystore account for the source wallet (recommended):
-  `cast wallet import <name> --interactive`. Alternatively,
-  `PRIVATE_KEY` env var (`export PRIVATE_KEY=0x...`) — **never commit or
-  hardcode it**.
+- A `cast` keystore account for the source wallet:
+  `cast wallet import <name> --interactive`. Do not read a private key from the environment or from disk.
+  If the user must supply a hex key for a viem signer, it comes from the plugin prompt `${user_config.source_private_key}`.
 - `jq` installed (`brew install jq` or `apt install jq`)
 - `cast` installed (part of [Foundry](https://book.getfoundry.sh/))
 
@@ -477,7 +472,7 @@ Key points:
 
 | Situation                                | Action                                                   |
 | ---------------------------------------- | -------------------------------------------------------- |
-| `tempo: command not found`               | Reinstall via install script; use full path              |
+| `tempo: command not found`               | Ask the user to install the Tempo CLI themselves and give the full path |
 | `legacy V1 keychain signature`           | Reinstall; `tempo update wallet && tempo update request` |
 | `access key does not exist`              | `tempo wallet logout --yes && tempo wallet login`        |
 | `ready=false` / no wallet                | `tempo wallet login`, then `whoami`                      |
@@ -499,7 +494,7 @@ Key points:
 
 ## Key Addresses and References
 
-- **Tempo CLI**: `https://tempo.xyz` (install script: `https://tempo.xyz/install`)
+- **Tempo CLI**: `https://tempo.xyz` (the user installs the CLI; do not run a remote installer)
 - **Trading API**: `https://trade-api.gateway.uniswap.org/v1`
 - **MPP docs**: `https://mpp.dev`
 - **MPP services catalog**: `https://mpp.dev/api/services`

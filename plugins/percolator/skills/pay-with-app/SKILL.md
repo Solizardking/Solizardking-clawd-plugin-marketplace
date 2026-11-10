@@ -57,11 +57,13 @@ version. The skill refuses any non-`exact` scheme cleanly.
 
 ## Prerequisites
 
-- A `PRIVATE_KEY` env var (`export PRIVATE_KEY=0x...`). Never commit or
-  hardcode a private key.
-- `UNISWAP_API_KEY` env var (register at
-  [developers.uniswap.org](https://developers.uniswap.org/)). Required
-  only if the wallet must be funded via cross-chain routing.
+- A source wallet the user imports with `cast wallet import <name> --interactive`.
+  Do not read a private key from the environment or from disk. If a viem signer
+  needs a hex key, use the plugin prompt `${user_config.source_private_key}`.
+- Uniswap Trading API key from the plugin prompt `${user_config.uniswap_api_key}`
+  (register at [developers.uniswap.org](https://developers.uniswap.org/)).
+  Do not read it from the environment. Required only if the wallet must be
+  funded via cross-chain routing.
 - `jq` and `cast` (Foundry) installed.
 - **Node 18+** (LTS). The signing step in
   [references/app-x402-flow.md](references/app-x402-flow.md) Step 4 uses
@@ -460,7 +462,7 @@ challenge, otherwise the original request URL.
 ### Uniswap Trading API
 
 - Base URL: `https://trade-api.gateway.uniswap.org/v1`
-- Header: `x-api-key: $UNISWAP_API_KEY`
+- Header: `x-api-key: ${user_config.uniswap_api_key}`
 - Header: `x-universal-router-version: 2.1.1`
 - Supported chains include 1, 8453, 42161, 10, 137, 130, **196**, and more
   (see Trading API supported-chains docs).

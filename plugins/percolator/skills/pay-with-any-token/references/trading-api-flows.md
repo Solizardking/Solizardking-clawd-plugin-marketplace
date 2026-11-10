@@ -53,7 +53,7 @@ USDC_E_AMOUNT_NEEDED="$REQUIRED_AMOUNT"  # For EXACT_OUTPUT: target = payment am
 
 ```text
 Content-Type: application/json
-x-api-key: <UNISWAP_API_KEY>
+x-api-key: ${user_config.uniswap_api_key}
 x-universal-router-version: 2.0
 ```
 
@@ -68,8 +68,7 @@ cast wallet import <ACCOUNT_NAME> --interactive
 ```
 
 All `cast send` examples below use `--account <ACCOUNT_NAME> --password <PW>`.
-If you prefer raw keys, substitute `--account ... --password ...` with
-`--private-key "$PRIVATE_KEY"` (some environments block this via hooks).
+Do not pass a raw private key on the command line, and do not read one from the environment.
 
 ### Hex-to-Decimal Conversion
 
@@ -96,7 +95,7 @@ APPROVAL_BODY=$(jq -n \
 
 curl -s -X POST https://trade-api.gateway.uniswap.org/v1/check_approval \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   -H "x-universal-router-version: 2.0" \
   -d "$APPROVAL_BODY"
 ```
@@ -138,7 +137,7 @@ QUOTE_BODY=$(jq -n \
 
 curl -s -X POST https://trade-api.gateway.uniswap.org/v1/quote \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   -H "x-universal-router-version: 2.0" \
   -d "$QUOTE_BODY"
 ```
@@ -221,7 +220,7 @@ fi
 
 curl -s -X POST https://trade-api.gateway.uniswap.org/v1/swap \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   -H "x-universal-router-version: 2.0" \
   -d "$SWAP_BODY"
 ```
@@ -316,7 +315,7 @@ BRIDGE_AMOUNT="$USDC_E_AMOUNT_NEEDED"
 
 APPROVAL=$(curl -s "https://trade-api.gateway.uniswap.org/v1/check_approval" \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   --data "$(jq -n \
     --arg token         "$BRIDGE_TOKEN_IN" \
     --arg amount        "$BRIDGE_AMOUNT" \
@@ -388,7 +387,7 @@ echo "Approval confirmed: $APPROVE_HASH"
 ```bash
 BRIDGE_QUOTE=$(curl -s "https://trade-api.gateway.uniswap.org/v1/quote" \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   --data "$(jq -n \
     --arg tokenIn        "$BRIDGE_TOKEN_IN" \
     --arg tokenInChainId "$SOURCE_CHAIN_ID" \
@@ -431,7 +430,7 @@ echo "Bridge quote: quoteId=$BRIDGE_QUOTE_ID fee=$BRIDGE_FEE eta=$BRIDGE_ETA"
 ```bash
 BRIDGE_RESPONSE=$(curl -s "https://trade-api.gateway.uniswap.org/v1/swap" \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   --data "$(jq -n \
     --argjson quote  "$BRIDGE_QUOTE" \
     --arg walletAddress "$WALLET_ADDRESS" \

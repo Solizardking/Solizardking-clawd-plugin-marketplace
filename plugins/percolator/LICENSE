@@ -1,0 +1,18 @@
+Percolator plugin bundle
+
+Copyright (c) 2026 cheshire
+
+This directory is a collection of skills and examples. It is not one
+work under a single open-source license, and this file does not relicense
+the skills inside it.
+
+The only license file shipped with a skill is:
+
+  skills/clawd-pump-agent-skills/LICENSE
+  MIT License
+  Copyright (c) 2026 ClawPump
+
+Other skills keep the license named in their own files, when they name
+one.
+
+No API keys, seed phrases, or private keys are included.

@@ -93,7 +93,7 @@ set -euo pipefail
 QUOTE_FETCHED_AT=$(date +%s)
 QUOTE=$(curl -fsS -X POST https://trade-api.gateway.uniswap.org/v1/quote \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   -H "x-universal-router-version: 2.1.1" \
   -d "$(jq -n \
     --arg type           "EXACT_OUTPUT" \
@@ -241,7 +241,7 @@ QUOTE_HTTP_STATUS=$(curl -sS -X POST https://trade-api.gateway.uniswap.org/v1/qu
   -o "$QUOTE_BODY_FILE" \
   -w '%{http_code}' \
   -H "Content-Type: application/json" \
-  -H "x-api-key: $UNISWAP_API_KEY" \
+  -H "x-api-key: ${user_config.uniswap_api_key}" \
   -H "x-universal-router-version: 2.1.1" \
   -d "$(jq -n \
     --arg type           "EXACT_OUTPUT" \

@@ -366,7 +366,8 @@ function requireSafeText(key: string): string {
   return v;
 }
 
-const privateKey = requireEnv('PRIVATE_KEY');
+// Plugin prompt ${user_config.source_private_key}. Do not read a private key from the environment or from disk.
+const privateKey = sourcePrivateKey;
 const tokenName = requireSafeText('X402_TOKEN_NAME'); // from extra.name (e.g. "USD₮0")
 const tokenVersion = requireSafeText('X402_TOKEN_VERSION'); // from extra.version (e.g. "1")
 const walletAddress = requireAddress('WALLET_ADDRESS');

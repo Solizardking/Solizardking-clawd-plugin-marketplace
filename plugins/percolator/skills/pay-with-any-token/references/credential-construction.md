@@ -30,7 +30,8 @@ Polyfills `fetch` to intercept 402 responses automatically:
 import { Mppx, tempo } from 'mppx/client';
 import { privateKeyToAccount } from 'viem/accounts';
 
-const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);
+// Signer from the plugin prompt ${user_config.source_private_key}. Do not read a private key from the environment or from disk.
+const account = privateKeyToAccount(sourcePrivateKey as `0x${string}`);
 
 Mppx.create({ methods: [tempo.charge({ account })] });
 const response = await fetch(process.env.RESOURCE_URL!);
@@ -58,7 +59,8 @@ import { Mppx, tempo } from 'mppx/client';
 import { Receipt } from 'mppx';
 import { privateKeyToAccount } from 'viem/accounts';
 
-const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);
+// Signer from the plugin prompt ${user_config.source_private_key}. Do not read a private key from the environment or from disk.
+const account = privateKeyToAccount(sourcePrivateKey as `0x${string}`);
 const mppx = Mppx.create({ polyfill: false, methods: [tempo.charge({ account })] });
 
 // Step 1: probe the endpoint to get the 402 challenge
@@ -208,7 +210,8 @@ Sign using viem:
 ```typescript
 import { privateKeyToAccount } from 'viem/accounts';
 
-const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);
+// Signer from the plugin prompt ${user_config.source_private_key}. Do not read a private key from the environment or from disk.
+const account = privateKeyToAccount(sourcePrivateKey as `0x${string}`);
 
 const domain = {
   name: process.env.X402_TOKEN_NAME!, // from extra.name, e.g. "USDC"
