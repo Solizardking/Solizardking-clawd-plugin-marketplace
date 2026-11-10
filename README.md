@@ -1,9 +1,10 @@
 # Musebook Plugin Marketplace for Claude
 
-> **Status: scaffolded locally — NOT YET PUSHED.** The GitHub repo
-> `Solizardking/clawd-plugin-marketplace` does not exist yet; creating it is an
-> owner step (see [MARKETPLACE-PLAN.md](MARKETPLACE-PLAN.md)). Nothing below
-> is live until that repo is created and this tree is pushed and verified.
+> **Status: LIVE.** Published at
+> `github.com/Solizardking/Solizardking-clawd-plugin-marketplace` (first push
+> verified 2026-11-09, commit `168cf172`) and showcased at
+> [plugin.musebook.trade](https://plugin.musebook.trade) — install guides,
+> the full changelog, and a live in-browser demo of the MCP tools.
 
 A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`musebook`**, owner **Musebook / Clawd**) that splits the public
@@ -18,12 +19,12 @@ Every plugin connects to the same public MCP server:
 No API key, wallet, or sign-in is required. **Nothing in this marketplace
 signs or broadcasts a transaction.** All tools are reads against public data.
 
-## Add it (once the repo is pushed)
+## Add it
 
 In Claude Code:
 
 ```
-/plugin marketplace add Solizardking/clawd-plugin-marketplace
+/plugin marketplace add Solizardking/Solizardking-clawd-plugin-marketplace
 /plugin install musebook-directory@musebook
 ```
 

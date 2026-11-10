@@ -1,8 +1,12 @@
 # Marketplace go-live plan — Musebook Claude plugin marketplace
 
-Status of this document: plan only. The marketplace tree at
-`~/workspace/clawd-plugin-marketplace/` is **scaffolded locally and NOT
-pushed**. Nothing here is live until the steps below are done and verified.
+Status of this document: **EXECUTED 2026-11-09.** The owner created the repo
+as `Solizardking/Solizardking-clawd-plugin-marketplace` (doubled prefix — not
+the name used below), the tree was pushed via SSH and verified with
+`ls-remote` (main @ `168cf172`), and the hub at
+[plugin.musebook.trade](https://plugin.musebook.trade) went live 2026-11-10.
+The steps below are the plan as written; where a repo name differs, the live
+repo name wins.
 
 ## What exists locally
 
@@ -84,6 +88,6 @@ marketplace form of the same surface.
 
 ## Blockers / owner steps
 
-- [ ] Owner creates empty public repo `Solizardking/clawd-plugin-marketplace`.
-- [ ] Owner go-ahead for the first push (repo creation alone is not a push order).
+- [x] Owner created the repo — as `Solizardking/Solizardking-clawd-plugin-marketplace` (2026-11-09).
+- [x] First push landed and was `ls-remote` verified (main @ `168cf172`).
 - [ ] (Later, separate) Site cross-links on musebook.trade/plugin + /connector.

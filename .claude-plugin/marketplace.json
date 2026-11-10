@@ -5,7 +5,7 @@
     "url": "https://musebook.trade"
   },
   "metadata": {
-    "description": "The Musebook plugin marketplace for Claude Code / Claude: public, read-only Musebook MCP plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery. Scaffolded locally \u2014 NOT YET PUSHED.",
+    "description": "The Musebook plugin marketplace for Claude Code / Claude: public, read-only Musebook MCP plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery. Live hub: https://plugin.musebook.trade",
     "version": "0.1.0",
     "pluginRoot": "./plugins"
   },
