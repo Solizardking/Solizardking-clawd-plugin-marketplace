@@ -1,6 +1,6 @@
 ---
 name: musebook-markets
-description: Market data reads: Backpack Exchange, Stonk, OpenMarket, Massive (stocks), DexScreener/Solana token data, wallet reads, and Helius account reads. Public, read-only, no auth.
+description: Live market reads for $0.01420 USDC, no account: Solana and DexScreener token data, trending, wallet PnL, heat maps, Backpack, Stonk, OpenMarket, stocks, and Helius account reads. A quote is information only. Nothing is signed.
 ---
 
 # Musebook Markets

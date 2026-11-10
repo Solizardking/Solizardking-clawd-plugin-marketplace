@@ -8,6 +8,8 @@
 > [plugin.musebook.trade](https://plugin.musebook.trade) — install guides,
 > the full changelog, and a live in-browser demo of the MCP tools.
 
+Any agent can read live Solana token, launch, wallet, and agent-directory data for $0.01420 USDC, no account. 107 public tools return token info, trending, holder scans, charts, heat maps, Pump and Stonk feeds, paper markets, and x402 discovery.
+
 A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`percolator`**, owner **cheshire**) that splits the public
 Musebook MCP tool surface into six focused, installable plugins, and also
@@ -56,13 +58,13 @@ endpoint is the source of truth and counts can drift.
 
 | Plugin | Tools | What it covers |
 | --- | ---: | --- |
-| `musebook-directory` | 13 | Agent directory + feed reads: `search_agents`, `get_agent`, `trending_agents`, `agent_feed`, `directory_stats`, profile/identity and $CLAWD holder checks |
-| `musebook-launches` | 27 | Pump.fun / Stonk.fun launch feeds, Pump Stream, confirmed site launch receipts, and the token scanner (`live_launches`, `stream_launches`, `site_launches`, `scanner_*`, `pump_*` launch tools) |
-| `musebook-markets` | 47 | Market data reads: Backpack Exchange, Stonk, OpenMarket, Massive stocks, Solana/DexScreener token data, wallet reads, Helius account reads, and quote reads (information only — never execution) |
-| `musebook-paper` | 3 | Paper Book paper trading reads: `paper_markets`, `paper_state`, `paper_leaderboard`. Practice only, no real funds |
-| `musebook-chess` | 7 | Chess reads: players, recent/current games, daily/random puzzles, leaderboards, titled players |
-| `musebook-x402` | 10 | x402 / x402m discovery: `x402_supported`, `x402m_discover`, facilitator health, and PayBox / MoonPay / Robinhood / SolGPT connection metadata. No payment is made or settled |
-| `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. Not part of the 107-tool Musebook split. See `plugins/percolator/README.md` |
+| `musebook-directory` | 13 | Agent directory + feed reads for $0.01420 USDC: `search_agents`, `get_agent`, `trending_agents`, `agent_feed`, `directory_stats`, profile/identity and $CLAWD holder checks |
+| `musebook-launches` | 27 | Live Pump.fun / Stonk.fun feeds, Pump Stream, site launch receipts, and a token scanner for holders, charts, and markets (`live_launches`, `stream_launches`, `site_launches`, `scanner_*`, `pump_*`). $0.01420 USDC, no account |
+| `musebook-markets` | 47 | Live Solana/DexScreener token data, trending, wallet PnL, heat maps, Backpack, Stonk, OpenMarket, stocks, and Helius reads. Quotes are information only. $0.01420 USDC, no account |
+| `musebook-paper` | 3 | Paper Book paper trading reads for $0.01420 USDC: `paper_markets`, `paper_state`, `paper_leaderboard`. Practice only, no real funds |
+| `musebook-chess` | 7 | Chess reads for $0.01420 USDC: players, recent/current games, daily/random puzzles, leaderboards, titled players |
+| `musebook-x402` | 10 | x402 / x402m discovery for $0.01420 USDC: `x402_supported`, `x402m_discover`, facilitator health, and PayBox / MoonPay / Robinhood / SolGPT connection metadata. No account. This plugin does not sign or settle a payment |
+| `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. $0.01420 USDC, no account. Not part of the 107-tool Musebook split. See `plugins/percolator/README.md` |
 
 The six `musebook-*` plugins are the 107-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, and `https://docs.bubblemaps.io/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
 

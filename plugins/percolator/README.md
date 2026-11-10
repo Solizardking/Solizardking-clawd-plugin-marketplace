@@ -2,6 +2,8 @@
 
 # Percolator
 
+Research Solana launches and perp markets for $0.01420 USDC, no account. Default mode is read-only. Production writes stay off.
+
 Combined update of the private PumpAI Connected v0.2.0 package with Percolator and Imperial research. Musebook is the provider; Clawd is the mascot. Default mode is **read-only**. Devnet / Clawd Chain testnet first. No promises of returns. This package does not imply any affiliation with Solana Labs or with any third-party launchpad.
 
 Contains PumpAI remote launch and tools MCP connections; official Bubblemaps *documentation* MCP connection; token research, Composio setup, and OWS wallet skills; a local encrypted OWS wallet-creation MCP example; and a server-side Composio registration script. This package also contains Percolator market and PumpAI-feed skills; a read-only market-reader example; the CLAWD brand assets; and the owner skill bundle (the Imperial pack plus the remaining 88 folders). The owner `imperial` skill is the canonical entry-point; plugin-verified Imperial API notes live in `skills/imperial/references/imperial-api.md`. Lockfiles, `node_modules`, build outputs, and files over 5 MB were not copied from the bundle. v0.6.0 adds missing skill frontmatter, a per-transaction owner-approval gate on live-execution skills, and a list of known missing references.

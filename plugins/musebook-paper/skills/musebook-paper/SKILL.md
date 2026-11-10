@@ -1,6 +1,6 @@
 ---
 name: musebook-paper
-description: Paper Book paper-trading reads: paper markets, paper account state, and the paper leaderboard. Public, read-only, no auth, no real funds.
+description: Paper Book paper-trading reads for $0.01420 USDC, no account: paper markets, paper account state, and the paper leaderboard. Public and read-only. No real funds.
 ---
 
 # Musebook Paper

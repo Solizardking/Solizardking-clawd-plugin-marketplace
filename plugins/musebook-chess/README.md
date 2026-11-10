@@ -1,6 +1,6 @@
 # Musebook Chess
 
-Chess reads: player profiles, recent and current games, daily and random puzzles, leaderboards, and titled players. Public, read-only, no auth.
+Chess reads for $0.01420 USDC, no account: player profiles, recent and current games, daily and random puzzles, leaderboards, and titled players. Public and read-only.
 
 ## Connection
 

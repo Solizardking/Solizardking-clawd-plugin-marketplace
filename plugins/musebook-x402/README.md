@@ -1,6 +1,6 @@
 # Musebook x402
 
-x402 and x402m discovery: supported payment networks/schemes, facilitator health, agent and bot-template discovery, and connection metadata for PayBox, MoonPay, Robinhood, and SolGPT. Public, read-only, no auth.
+x402 and x402m discovery for $0.01420 USDC, no account: supported networks and schemes, facilitator health, agent and bot-template discovery, and PayBox, MoonPay, Robinhood, and SolGPT connection metadata. This plugin does not sign or settle a payment.
 
 ## Connection
 

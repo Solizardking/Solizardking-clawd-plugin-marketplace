@@ -5,7 +5,7 @@
     "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "The Percolator plugin marketplace for Claude Code / Claude: public read-only plugins for the Solana AI agent directory, launch feeds, market data, Paper Book, chess, and x402 discovery, plus percolator (PumpAI, Bubblemaps docs, Percolator and Imperial research skills).",
+    "description": "Any agent can read live Solana token, launch, wallet, and agent-directory data for $0.01420 USDC, no account. 107 public tools return token info, trending, holder scans, charts, heat maps, Pump and Stonk feeds, paper markets, and x402 discovery. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
     "version": "2.0.0",
     "pluginRoot": "./plugins"
   },
@@ -13,7 +13,7 @@
     {
       "name": "musebook-directory",
       "source": "./plugins/musebook-directory",
-      "description": "Musebook agent directory and feed reads: search and look up registered Solana AI agents, trending agents, the agent feed, directory stats, and identity/holder checks. Public, read-only, no auth.",
+      "description": "Musebook agent directory and feed reads for $0.01420 USDC, no account: search and look up registered Solana AI agents, trending agents, the agent feed, directory stats, and identity/holder checks. Public and read-only.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -33,7 +33,7 @@
     {
       "name": "musebook-launches",
       "source": "./plugins/musebook-launches",
-      "description": "Pump.fun and Stonk.fun launch feeds, the Pump Stream, confirmed Musebook site launch receipts, and the token scanner. Public, read-only research data, no auth.",
+      "description": "Live Pump.fun and Stonk.fun feeds, the Pump Stream, confirmed site launch receipts, and a token scanner for holders, charts, and markets. $0.01420 USDC, no account. Public read-only research. Nothing is signed.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -53,7 +53,7 @@
     {
       "name": "musebook-markets",
       "source": "./plugins/musebook-markets",
-      "description": "Market data reads: Backpack Exchange, Stonk, OpenMarket, Massive (stocks), DexScreener/Solana token data, wallet reads, and Helius account reads. Public, read-only, no auth.",
+      "description": "Live market reads for $0.01420 USDC, no account: Solana and DexScreener token data, trending, wallet PnL, heat maps, Backpack, Stonk, OpenMarket, stocks, and Helius account reads. A quote is information only. Nothing is signed.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -73,7 +73,7 @@
     {
       "name": "musebook-paper",
       "source": "./plugins/musebook-paper",
-      "description": "Paper Book paper-trading reads: paper markets, paper account state, and the paper leaderboard. Public, read-only, no auth, no real funds.",
+      "description": "Paper Book paper-trading reads for $0.01420 USDC, no account: paper markets, paper account state, and the paper leaderboard. Public and read-only. No real funds.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -93,7 +93,7 @@
     {
       "name": "musebook-chess",
       "source": "./plugins/musebook-chess",
-      "description": "Chess reads: player profiles, recent and current games, daily and random puzzles, leaderboards, and titled players. Public, read-only, no auth.",
+      "description": "Chess reads for $0.01420 USDC, no account: player profiles, recent and current games, daily and random puzzles, leaderboards, and titled players. Public and read-only.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -113,7 +113,7 @@
     {
       "name": "musebook-x402",
       "source": "./plugins/musebook-x402",
-      "description": "x402 and x402m discovery: supported payment networks/schemes, facilitator health, agent and bot-template discovery, and connection metadata for PayBox, MoonPay, Robinhood, and SolGPT. Public, read-only, no auth.",
+      "description": "x402 and x402m discovery for $0.01420 USDC, no account: supported networks and schemes, facilitator health, agent and bot-template discovery, and PayBox, MoonPay, Robinhood, and SolGPT connection metadata. This plugin does not sign or settle a payment.",
       "version": "0.1.0",
       "author": {
         "name": "Musebook / Clawd",
@@ -133,7 +133,7 @@
     {
       "name": "percolator",
       "source": "./plugins/percolator",
-      "description": "Percolator: PumpAI launch tools, Bubblemaps documentation guidance, Composio custom toolkit setup, local-first OWS wallet onboarding, permissionless perp-market reads on Clawd Chain testnet and Solana devnet, and Imperial market-data guidance, plus the owner skill bundle. Includes unified backend design, owner-signed Imperial trade policy, and Phoenix read-only adapter guidance. Production write access stays disabled pending deployment and security review.",
+      "description": "Research Solana launches and perp markets for $0.01420 USDC, no account. PumpAI launch tools, Bubblemaps documentation, read-only Percolator and Imperial market guidance, and the owner skill bundle. Default mode is read-only. Production writes stay off.",
       "version": "0.7.0",
       "author": {
         "name": "cheshire",

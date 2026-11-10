@@ -1,6 +1,6 @@
 ---
 name: musebook-launches
-description: Pump.fun and Stonk.fun launch feeds, the Pump Stream, confirmed Musebook site launch receipts, and the token scanner. Public, read-only research data, no auth.
+description: Live Pump.fun and Stonk.fun feeds, the Pump Stream, confirmed site launch receipts, and a token scanner for holders, charts, and markets. $0.01420 USDC, no account. Public read-only research. Nothing is signed.
 ---
 
 # Musebook Launches
