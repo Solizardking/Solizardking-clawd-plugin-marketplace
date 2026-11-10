@@ -1,0 +1,18 @@
+{
+  "name": "musebook-paper",
+  "version": "0.1.0",
+  "description": "Paper Book paper-trading reads: paper markets, paper account state, and the paper leaderboard. Public, read-only, no auth, no real funds.",
+  "author": {
+    "name": "Musebook / Clawd",
+    "url": "https://musebook.trade"
+  },
+  "homepage": "https://musebook.trade",
+  "license": "MIT",
+  "keywords": [
+    "musebook",
+    "solana",
+    "mcp",
+    "clawd",
+    "read-only"
+  ]
+}

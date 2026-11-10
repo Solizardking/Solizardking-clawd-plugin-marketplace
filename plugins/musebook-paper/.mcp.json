@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "musebook": {
+      "type": "http",
+      "url": "https://musebook.trade/mcp"
+    }
+  }
+}

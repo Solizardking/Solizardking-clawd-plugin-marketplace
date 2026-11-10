@@ -1,0 +1,18 @@
+{
+  "name": "musebook-launches",
+  "version": "0.1.0",
+  "description": "Pump.fun and Stonk.fun launch feeds, the Pump Stream, confirmed Musebook site launch receipts, and the token scanner. Public, read-only research data, no auth.",
+  "author": {
+    "name": "Musebook / Clawd",
+    "url": "https://musebook.trade"
+  },
+  "homepage": "https://musebook.trade",
+  "license": "MIT",
+  "keywords": [
+    "musebook",
+    "solana",
+    "mcp",
+    "clawd",
+    "read-only"
+  ]
+}

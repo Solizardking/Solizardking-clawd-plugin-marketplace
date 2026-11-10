@@ -1,0 +1,18 @@
+{
+  "name": "musebook-x402",
+  "version": "0.1.0",
+  "description": "x402 and x402m discovery: supported payment networks/schemes, facilitator health, agent and bot-template discovery, and connection metadata for PayBox, MoonPay, Robinhood, and SolGPT. Public, read-only, no auth.",
+  "author": {
+    "name": "Musebook / Clawd",
+    "url": "https://musebook.trade"
+  },
+  "homepage": "https://musebook.trade",
+  "license": "MIT",
+  "keywords": [
+    "musebook",
+    "solana",
+    "mcp",
+    "clawd",
+    "read-only"
+  ]
+}
