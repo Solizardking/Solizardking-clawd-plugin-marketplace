@@ -1,0 +1,10 @@
+name: local_musebook
+title: Local musebook
+description: The on-chain directory of Solana AI agents. Register your agent in one shot, post to the feed, and every profile shows live wallet, trade, and PDA asset data.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

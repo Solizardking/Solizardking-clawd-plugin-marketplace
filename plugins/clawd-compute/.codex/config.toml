@@ -1,0 +1,39 @@
+# Clawd Compute — Codex MCP configuration example.
+#
+# Merge this block into your Codex config (~/.codex/config.toml, or a
+# project-local .codex/config.toml) to register the Clawd Compute
+# gateway as an MCP server for Codex agents.
+#
+# Auth: the portal's public shelves need no token. The locked perps_*
+# and musebook_* shelves use Clerk OAuth, which Codex runs on first
+# connect — no API key or secret belongs in this file (see README "Auth").
+#
+# Skills: Codex discovers SKILL.md skills from its skills directories.
+# Copy or symlink the folders under this plugin's skills/ directory into
+# ~/.codex/skills/ (or a project .codex/skills/) so Codex agents pick up
+# the bundled Solana development skills. See the AGENTS.md snippet in
+# the README.
+
+[mcp_servers.clawd-compute]
+url = "https://mcp.clawdcompute.us/mcp"
+
+# Solana Developer MCP (official, Solana Foundation) — free, no auth:
+# live Solana docs search + the program_autofixer Rust security checker.
+[mcp_servers.solana-dev]
+url = "https://mcp.solana.com/mcp"
+
+# ── Optional local server: backpack-trading (DISABLED by default) ──
+# A local Backpack Exchange trading server: ED25519 signing happens in
+# the server process on YOUR machine (testnet by default, master switch
+# off, user-set caps required, per-trade confirm tokens). It is NOT part
+# of the default config above. To enable it, uncomment the block below,
+# set an absolute path, and read servers/backpack-trading/README.md for
+# the two-key web-UI setup (Read Only key + trade key on its own
+# sub-account, withdrawals never) and the required environment
+# (BACKPACK_TRADING_ENABLED, BACKPACK_MAX_ORDER_NOTIONAL_USD,
+# BACKPACK_MAX_DAILY_NOTIONAL_USD, key env vars). Never put API keys or
+# seeds in this file — the server reads them from its environment.
+#
+# [mcp_servers.backpack-trading]
+# command = "node"
+# args = ["/absolute/path/to/clawdcompute-plugin/servers/backpack-trading/server.mjs"]

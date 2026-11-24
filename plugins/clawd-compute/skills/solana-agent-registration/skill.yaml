@@ -1,0 +1,10 @@
+name: local_solana_agent_registration
+title: Local solana agent registration
+description: 'Register an AI agent on-chain via the Metaplex Agent Registry: mint an MPL Core asset, bind an Agent Identity record, and verify it. One-shot flow a Muse agent can run end to end.'
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

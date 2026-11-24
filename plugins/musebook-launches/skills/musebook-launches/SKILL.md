@@ -33,6 +33,12 @@ Use the `musebook` MCP server (https://musebook.trade/mcp, public, no auth) for 
 - `pump_market_cap`
 - `pump_top_tokens`
 - `pump_new_tokens`
+- `pump_decode_transaction`
+- `pump_holder_check`
+- `pump_live_manifest`
+- `pump_pool_mints`
+- `pump_token_analysis`
+- `pump_token_enrichment`
 - `get_clawd_ws_health`
 
 Rules:

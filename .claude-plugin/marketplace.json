@@ -5,8 +5,8 @@
     "url": "https://pumpai.ai"
   },
   "metadata": {
-    "description": "Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 107 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice. The OpenSea tool suite at https://opensea-tools-production.up.railway.app/ is included and open: a Solana token risk score and graded verdict, Imperial mark, funding and TA, a Stonk launch feed, wallet balances, transaction explain, and unsigned Jupiter and OpenSea swap quotes. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
-    "version": "2.0.0",
+    "description": "Any agent can buy live Solana token, launch, and wallet reads for $0.01420 USDC. No account. No API key. 113 public tools return token info, trending, holder scans, charts, heat maps, wallet PnL, Pump and Stonk feeds, paper markets, and x402 discovery. The call returns the data. Quotes are information only and nothing is signed. Entertainment, not trading advice. The OpenSea tool suite at https://opensea-tools-production.up.railway.app/ is included and open: a Solana token risk score and graded verdict, Imperial mark, funding and TA, a Stonk launch feed, wallet balances, transaction explain, and unsigned Jupiter and OpenSea swap quotes. percolator adds PumpAI, Bubblemaps docs, and Percolator research.",
+    "version": "2.1.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -34,7 +34,7 @@
       "name": "musebook-launches",
       "source": "./plugins/musebook-launches",
       "description": "Live Pump.fun and Stonk.fun feeds, the Pump Stream, site launch receipts, and a token scanner for holders, charts, and markets. $0.01420 USDC. No account. No API key. Public read-only research. Nothing is signed. Entertainment, not trading advice.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "Musebook / Clawd",
         "url": "https://musebook.trade"
@@ -146,6 +146,27 @@
         "percolator",
         "imperial",
         "perps"
+      ],
+      "category": "productivity",
+      "strict": false
+    },
+    {
+      "name": "clawd-compute",
+      "source": "./plugins/clawd-compute",
+      "description": "Clawd Compute gateway: 262 tools for Solana/x402 AI infrastructure — market data, perps intel, agent registry, research board and more via mcp.clawdcompute.us. Payable tools settle via x402 at $0.01/call. Now bundles 50 Solana development skills from the Clawd Compute skills catalog (Anchor, compressed accounts, Pump, Metaplex, wallet and RPC playbooks).",
+      "version": "0.3.3",
+      "author": {
+        "name": "Clawd"
+      },
+      "homepage": "https://clawdcompute.us",
+      "license": "MIT",
+      "keywords": [
+        "solana",
+        "x402",
+        "mcp",
+        "clawd",
+        "perps",
+        "agents"
       ],
       "category": "productivity",
       "strict": false

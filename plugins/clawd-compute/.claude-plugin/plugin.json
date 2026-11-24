@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "Clawd"
+  },
+  "description": "Clawd Compute gateway: 262 tools for Solana/x402 AI infrastructure \u2014 market data, perps intel, agent registry, research board and more via mcp.clawdcompute.us. Payable tools settle via x402 at $0.01/call. Now bundles 50 Solana development skills from the Clawd Compute skills catalog (Anchor, compressed accounts, Pump, Metaplex, wallet and RPC playbooks).",
+  "homepage": "https://clawdcompute.us",
+  "keywords": [
+    "solana",
+    "x402",
+    "mcp",
+    "clawd",
+    "perps",
+    "agents"
+  ],
+  "license": "MIT",
+  "mcpServers": "./.mcp.json",
+  "name": "clawd-compute",
+  "repository": "https://github.com/Solizardking/clawdcompute-plugin",
+  "skills": "./skills/",
+  "version": "0.3.3"
+}

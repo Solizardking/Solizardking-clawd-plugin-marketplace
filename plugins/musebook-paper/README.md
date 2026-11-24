@@ -10,13 +10,13 @@ Paper Book paper-trading reads for $0.01420 USDC, no account: paper markets, pap
 
 Declared in `.mcp.json` at the plugin root. No API key, wallet, or sign-in is required, and no credential is collected.
 
-## Tools (3 in the 2026-11-09 public snapshot)
+## Tools (3 in the 2026-11-24 public snapshot)
 
 - `paper_markets`
 - `paper_state`
 - `paper_leaderboard`
 
-Tool list derived from `~/workspace/musebook-provider/mcp-tools.json` (107-tool public snapshot of https://musebook.trade/mcp, checked 2026-11-09). The live endpoint is the source of truth; counts can drift as tools are added or removed.
+Tool list verified against the live tools/list of https://musebook.trade/mcp (113-tool public snapshot, checked 2026-11-24). The live endpoint is the source of truth; counts can drift as tools are added or removed.
 
 ## Honest scope
 

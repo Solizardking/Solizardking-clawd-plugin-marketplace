@@ -10,7 +10,7 @@ Live Pump.fun and Stonk.fun feeds, the Pump Stream, site launch receipts, and a 
 
 Declared in `.mcp.json` at the plugin root. No API key, wallet, or sign-in is required, and no credential is collected.
 
-## Tools (27 in the 2026-11-09 public snapshot)
+## Tools (33 in the 2026-11-24 public snapshot)
 
 - `live_launches`
 - `stream_launches`
@@ -38,9 +38,15 @@ Declared in `.mcp.json` at the plugin root. No API key, wallet, or sign-in is re
 - `pump_market_cap`
 - `pump_top_tokens`
 - `pump_new_tokens`
+- `pump_decode_transaction`
+- `pump_holder_check`
+- `pump_live_manifest`
+- `pump_pool_mints`
+- `pump_token_analysis`
+- `pump_token_enrichment`
 - `get_clawd_ws_health`
 
-Tool list derived from `~/workspace/musebook-provider/mcp-tools.json` (107-tool public snapshot of https://musebook.trade/mcp, checked 2026-11-09). The live endpoint is the source of truth; counts can drift as tools are added or removed.
+Tool list verified against the live tools/list of https://musebook.trade/mcp (113-tool public snapshot, checked 2026-11-24). The live endpoint is the source of truth; counts can drift as tools are added or removed.
 
 ## Honest scope
 

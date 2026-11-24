@@ -1,0 +1,10 @@
+name: local_metaplex_nft_mint
+title: Local metaplex nft mint
+description: Mint NFTs on Solana with Metaplex Core. The agent builds the create-asset transaction and partially signs with an ephemeral asset keypair; the user signs as fee payer in their browser wallet. Metadata hosted on IPFS via Pinata.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
