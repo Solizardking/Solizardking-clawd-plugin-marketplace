@@ -19,7 +19,7 @@ A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`percolator`**, owner **cheshire**) that splits the public
 Musebook MCP tool surface into six focused, installable plugins, and also
 ships `percolator` (v0.7.0) for PumpAI, Bubblemaps docs,
-Percolator, and Imperial research, plus `clawd-compute` (v0.3.4) for the
+Percolator, and Imperial research, plus `clawd-compute` (v0.3.5) for the
 Clawd Compute gateway.
 
 The six `musebook-*` plugins connect to the same public MCP server:
@@ -75,7 +75,7 @@ of truth and counts can drift.
 
 The six `musebook-*` plugins are the 113-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, `https://docs.bubblemaps.io/mcp`, and `https://opensea-tools-production.up.railway.app/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
 
-`clawd-compute` is a separate package too (v0.3.4, vendored from the clawdcompute-plugin repo). Its `.mcp.json` connects to `https://mcp.clawdcompute.us/mcp`, `https://pumpai.ai/mcp`, `https://mcp.equities.clawdcompute.us/mcp`, and the official Solana Developer MCP at `https://mcp.solana.com/mcp`. It bundles 53 skills, including `clawd-self-update` and `clawd-x402-tools`, and an optional local Backpack trading server that ships disabled — off by default, testnet-first, user-side signing only; the gateway's own trading tools stay fail-closed. See `plugins/clawd-compute/README.md`.
+`clawd-compute` is a separate package too (v0.3.5, vendored from the clawdcompute-plugin repo). Its `.mcp.json` connects to `https://mcp.clawdcompute.us/mcp`, `https://pumpai.ai/mcp`, `https://mcp.equities.clawdcompute.us/mcp`, and the official Solana Developer MCP at `https://mcp.solana.com/mcp`. It bundles 53 skills, including `clawd-self-update` and `clawd-x402-tools`, and an optional local Backpack trading server that ships disabled — off by default, testnet-first, user-side signing only; the gateway's own trading tools stay fail-closed. See `plugins/clawd-compute/README.md`.
 
 Per-plugin tool lists for the Musebook split live in each plugin's `README.md` under `plugins/`.
 
