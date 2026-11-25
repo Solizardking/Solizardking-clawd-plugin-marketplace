@@ -1,4 +1,4 @@
-# Percolator Plugin Marketplace
+# Clawd Plugin Marketplace
 
 ![Clawd claw](assets/clawd-claw.png)
 
