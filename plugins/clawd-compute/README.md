@@ -10,18 +10,22 @@ and more.
 - **MCP server:** `https://mcp.clawdcompute.us/mcp` (streamable HTTP) —
   the same portal also answers at `https://clawdcompute.us/mcp`; public
   shelves need no token (see Auth)
-- **Companion server:** the plugin also registers the official
-  **Solana Developer MCP** (`https://mcp.solana.com/mcp`, Solana
-  Foundation, free, no auth) as `solana-dev` — live Solana docs search
-  plus the `program_autofixer` Rust security checker, next to the
-  gateway's market/tool shelves.
+- **Companion servers:** the plugin also registers three more remote
+  MCP servers, all with no headers or secrets:
+  - **PumpAI** (`https://pumpai.ai/mcp`) as `pumpai`
+  - **Clawd equities** (`https://mcp.equities.clawdcompute.us/mcp`) as
+    `clawd-equities` — read-only tokenized equities on Solana
+  - the official **Solana Developer MCP** (`https://mcp.solana.com/mcp`,
+    Solana Foundation, free, no auth) as `solana-dev` — live Solana
+    docs search plus the `program_autofixer` Rust security checker,
+    next to the gateway's market/tool shelves.
 - **Catalog snapshot:** [`catalog/ALL-X402-TOOLS.md`](catalog/ALL-X402-TOOLS.md)
   (catalog verified live 2026-11-24: 262 tools)
 - **Operator:** Clawd ($CLAWD) · https://clawdcompute.us
 
 ## Skills included
 
-Version 0.3.3 bundles **51 skills**: the gateway skill plus 50
+Version 0.3.4 bundles **53 skills**: the gateway skill, `clawd-self-update`, `clawd-x402-tools`, and 50
 Solana development skills harvested from the live catalog at
 **https://clawdcompute.us/skills** (the Musebook skills catalog,
 `musebook.trade/api/skills` — 272 skills total; this plugin bundles the
@@ -34,9 +38,11 @@ inventory is snapshotted at
 | Skill | What it's for | Source |
 |---|---|---|
 | `clawd-compute` | The gateway itself: what mcp.clawdcompute.us is, the portal shelves, x402 cost, auth paths, fail-closed trading rules. | This plugin |
+| `clawd-self-update` | Pull the latest Clawd skills, plugins and MCP connectors from clawdcompute.us and musebook.trade. Use on a new install, a scheduled refresh, or when asked to update. | This plugin |
 | `cheshire-omni-mint` | > | clawdcompute.us/skills · Solana catalog |
 | `clawd-agent-launchpad` | Build, launch, stake, and manage Clawd or Cheshire Terminal agents. Use when working on Agent Launchpad, agent templa… | clawdcompute.us/skills · Solana catalog |
 | `clawd-token-ops` | Work with $CLAWD token operations for Solana CLAWD and Cheshire Terminal. Use when checking or documenting the $CLAWD… | clawdcompute.us/skills · Solana catalog |
+| `clawd-x402-tools` | Use Clawd's x402 tools, the MCP portals, the equities MCP, the decide desk, Clawd domains, and 402reviews before or after a paid call. | This plugin |
 | `compressed-pda` | For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN regis… | clawdcompute.us/skills · Solana catalog |
 | `compressed-token` | For compressed token operations on Solana ~400x cheaper than SPL: create mints with interface PDAs, mint, transfer, a… | clawdcompute.us/skills · Solana catalog |
 | `helius-dflow` | Build Solana trading applications combining DFlow trading APIs with Helius infrastructure. Covers spot swaps (imperat… | clawdcompute.us/skills · General catalog |
@@ -115,6 +121,10 @@ indicative quotes and book-walk estimates are.
 
 ## Install
 
+After you install this plugin, run the `clawd-self-update` skill first
+so a new install picks up the latest Clawd skills, plugins and MCP
+connectors from clawdcompute.us and musebook.trade.
+
 ### Claude Code
 
 Local checkout:
@@ -141,7 +151,9 @@ root `mcp.json`. For local development, copy/symlink this folder to
 ```json
 {
   "mcpServers": {
-    "clawd-compute": { "url": "https://mcp.clawdcompute.us/mcp" }
+    "clawd-compute": { "url": "https://mcp.clawdcompute.us/mcp" },
+    "pumpai": { "url": "https://pumpai.ai/mcp" },
+    "clawd-equities": { "url": "https://mcp.equities.clawdcompute.us/mcp" }
   }
 }
 ```
@@ -162,7 +174,9 @@ remote servers use `serverUrl`). This repo ships a ready example at
 ```json
 {
   "mcpServers": {
-    "clawd-compute": { "serverUrl": "https://mcp.clawdcompute.us/mcp" }
+    "clawd-compute": { "serverUrl": "https://mcp.clawdcompute.us/mcp" },
+    "pumpai": { "serverUrl": "https://pumpai.ai/mcp" },
+    "clawd-equities": { "serverUrl": "https://mcp.equities.clawdcompute.us/mcp" }
   }
 }
 ```
@@ -184,6 +198,12 @@ block at [`.codex/config.toml`](.codex/config.toml) — merge it into
 ```toml
 [mcp_servers.clawd-compute]
 url = "https://mcp.clawdcompute.us/mcp"
+
+[mcp_servers.pumpai]
+url = "https://pumpai.ai/mcp"
+
+[mcp_servers.clawd-equities]
+url = "https://mcp.equities.clawdcompute.us/mcp"
 ```
 
 Codex runs the OAuth flow on first connect; no secret belongs in the
@@ -196,14 +216,18 @@ snippet into your `AGENTS.md` so Codex agents know where they live:
 
 This project uses the Clawd Compute MCP server (`clawd-compute`,
 https://mcp.clawdcompute.us/mcp) for Solana market data, perps intel,
-the agent registry and the research board. Solana development skills
-(Anchor/Pinocchio programs, compressed accounts/tokens, Pump, Metaplex,
-wallets, RPC) are bundled in the clawd-compute plugin's `skills/`
-directory (installed under ~/.codex/skills/): load the matching
-SKILL.md before Solana work — start with `solana-dev`, and reach for
-`solana-common-errors` first when a build or deploy fails. Trading
-tools on the gateway stay fail-closed: never place a trade without the
-user's explicit confirmation.
+the agent registry and the research board, plus the PumpAI
+(`pumpai`, https://pumpai.ai/mcp) and Clawd equities
+(`clawd-equities`, https://mcp.equities.clawdcompute.us/mcp) connectors.
+Solana development skills (Anchor/Pinocchio programs, compressed
+accounts/tokens, Pump, Metaplex, wallets, RPC) are bundled in the
+clawd-compute plugin's `skills/` directory (installed under
+~/.codex/skills/): on a new install, run `clawd-self-update` first,
+then load the matching SKILL.md before Solana work — start with
+`solana-dev`, and reach for `solana-common-errors` first when a build
+or deploy fails. Trading tools on the gateway stay fail-closed: never
+place a trade without the user's explicit confirmation. Paying for an
+x402 call still waits for the owner's OK — see `clawd-x402-tools`.
 ```
 
 ### Any MCP client
@@ -211,7 +235,9 @@ user's explicit confirmation.
 ```json
 {
   "mcpServers": {
-    "clawd-compute": { "type": "http", "url": "https://mcp.clawdcompute.us/mcp" }
+    "clawd-compute": { "type": "http", "url": "https://mcp.clawdcompute.us/mcp" },
+    "pumpai": { "type": "http", "url": "https://pumpai.ai/mcp" },
+    "clawd-equities": { "type": "http", "url": "https://mcp.equities.clawdcompute.us/mcp" }
   }
 }
 ```
@@ -268,7 +294,7 @@ Full docs, tool list and gate list:
 plugin.json                  Agent Plugins (open standard) manifest — also loads in Cursor
 .mcp.json                    MCP servers (Claude Code convention)
 mcp.json                     MCP servers (Cursor / Agent Plugins convention)
-skills/                      51 skills: clawd-compute (gateway) + 50 bundled Solana dev skills
+skills/                      53 skills: clawd-compute (gateway), clawd-self-update, clawd-x402-tools, and 50 bundled Solana dev skills
 servers/backpack-trading/    optional local Backpack trading MCP server (off by default; see its README)
 .codex/config.toml           Codex MCP config example (merge into ~/.codex/config.toml)
 antigravity/mcp_config.json  Antigravity MCP config example (serverUrl form)

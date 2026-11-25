@@ -19,7 +19,7 @@ A Claude plugin marketplace (`.claude-plugin/marketplace.json`, marketplace
 name **`percolator`**, owner **cheshire**) that splits the public
 Musebook MCP tool surface into six focused, installable plugins, and also
 ships `percolator` (v0.7.0) for PumpAI, Bubblemaps docs,
-Percolator, and Imperial research, plus `clawd-compute` (v0.3.3) for the
+Percolator, and Imperial research, plus `clawd-compute` (v0.3.4) for the
 Clawd Compute gateway.
 
 The six `musebook-*` plugins connect to the same public MCP server:
@@ -71,11 +71,11 @@ of truth and counts can drift.
 | `musebook-chess` | 7 | Chess reads for $0.01420 USDC: players, recent/current games, daily/random puzzles, leaderboards, titled players |
 | `musebook-x402` | 10 | x402 / x402m discovery for $0.01420 USDC: `x402_supported`, `x402m_discover`, facilitator health, and PayBox / MoonPay / Robinhood / SolGPT connection metadata. No account. This plugin does not sign or settle a payment |
 | `percolator` | — | PumpAI launch + tools MCP, Bubblemaps documentation MCP, the open suite at https://opensea-tools-production.up.railway.app/, Percolator and Imperial read-only research, OWS/Composio setup skills, and the owner skill bundle. $0.01420 USDC, no account. Not part of the 113-tool Musebook split. See `plugins/percolator/README.md` |
-| `clawd-compute` | 262 | The Clawd Compute gateway (mcp.clawdcompute.us): the PumpAI catalog, tokenized equities, Backpack, Massive US stocks, the Clawd Desk boards, and AI tools — 244 payable at $0.01 via x402, 18 free or gated — plus the official solana-dev companion server and 51 bundled Solana development skills. Not part of the 113-tool Musebook split. See `plugins/clawd-compute/README.md` |
+| `clawd-compute` | 262 | The Clawd Compute gateway (mcp.clawdcompute.us), plus PumpAI (`https://pumpai.ai/mcp`) and tokenized-equities (`https://mcp.equities.clawdcompute.us/mcp`) connectors: the PumpAI catalog, tokenized equities, Backpack, Massive US stocks, the Clawd Desk boards, and AI tools — 244 payable at $0.01 via x402, 18 free or gated — plus the official solana-dev companion server and 53 bundled skills, including `clawd-self-update` and `clawd-x402-tools`. Not part of the 113-tool Musebook split. See `plugins/clawd-compute/README.md` |
 
 The six `musebook-*` plugins are the 113-tool split. `percolator` is a separate package (v0.7.0, from the v0.7.0-rc1 tree). Its `.mcp.json` connects to `https://pumpai.ai/mcp`, `https://pumpai.ai/tools`, `https://docs.bubblemaps.io/mcp`, and `https://opensea-tools-production.up.railway.app/mcp`. The original `mcp.json` is kept beside it. Package docs live in `plugins/percolator/docs/` and `CHANGELOG.md`. Default mode is read-only. Production write access stays disabled. It does not sign or broadcast transactions, and it does not bundle API keys, seed phrases, or private keys.
 
-`clawd-compute` is a separate package too (v0.3.3, vendored from the clawdcompute-plugin repo). Its `.mcp.json` connects to `https://mcp.clawdcompute.us/mcp` and the official Solana Developer MCP at `https://mcp.solana.com/mcp`. It bundles 51 skills and an optional local Backpack trading server that ships disabled — off by default, testnet-first, user-side signing only; the gateway's own trading tools stay fail-closed. See `plugins/clawd-compute/README.md`.
+`clawd-compute` is a separate package too (v0.3.4, vendored from the clawdcompute-plugin repo). Its `.mcp.json` connects to `https://mcp.clawdcompute.us/mcp`, `https://pumpai.ai/mcp`, `https://mcp.equities.clawdcompute.us/mcp`, and the official Solana Developer MCP at `https://mcp.solana.com/mcp`. It bundles 53 skills, including `clawd-self-update` and `clawd-x402-tools`, and an optional local Backpack trading server that ships disabled — off by default, testnet-first, user-side signing only; the gateway's own trading tools stay fail-closed. See `plugins/clawd-compute/README.md`.
 
 Per-plugin tool lists for the Musebook split live in each plugin's `README.md` under `plugins/`.
 
