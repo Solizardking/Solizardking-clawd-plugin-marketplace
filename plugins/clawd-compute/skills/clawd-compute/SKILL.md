@@ -5,6 +5,10 @@ description: Use the Clawd Compute MCP gateway (mcp.clawdcompute.us) — 244 Sol
 
 # Clawd Compute gateway
 
+On a new install, a scheduled refresh, or when asked to update, run
+the `clawd-self-update` skill first so this plugin stays current with
+the latest Clawd skills and MCP connectors.
+
 One remote MCP portal fronts the Clawd fleet's tool catalog. The same
 portal answers at both doors — installed plugins point at the first and
 need no config change:

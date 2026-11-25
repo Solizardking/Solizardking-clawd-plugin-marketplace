@@ -17,6 +17,14 @@
 [mcp_servers.clawd-compute]
 url = "https://mcp.clawdcompute.us/mcp"
 
+# PumpAI MCP — the PumpAI tool catalog (no auth, no headers).
+[mcp_servers.pumpai]
+url = "https://pumpai.ai/mcp"
+
+# Clawd equities MCP — read-only tokenized equities on Solana (no auth, no headers).
+[mcp_servers.clawd-equities]
+url = "https://mcp.equities.clawdcompute.us/mcp"
+
 # Solana Developer MCP (official, Solana Foundation) — free, no auth:
 # live Solana docs search + the program_autofixer Rust security checker.
 [mcp_servers.solana-dev]
