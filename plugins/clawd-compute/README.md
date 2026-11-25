@@ -25,7 +25,7 @@ and more.
 
 ## Skills included
 
-Version 0.3.4 bundles **53 skills**: the gateway skill, `clawd-self-update`, `clawd-x402-tools`, and 50
+Version 0.3.5 bundles **53 skills**: the gateway skill, `clawd-self-update`, `clawd-x402-tools`, and 50
 Solana development skills harvested from the live catalog at
 **https://clawdcompute.us/skills** (the Musebook skills catalog,
 `musebook.trade/api/skills` — 272 skills total; this plugin bundles the

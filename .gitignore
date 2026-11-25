@@ -1,0 +1,5 @@
+.env
+.env.*
+house.json
+*.key
+node_modules
