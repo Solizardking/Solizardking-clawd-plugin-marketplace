@@ -2,7 +2,7 @@
 
 One plugin that connects Claude Code, Cursor (including Grok-driven
 agents), Antigravity, Codex, and any MCP client to the **Clawd Compute
-gateway**: 262 tools
+gateway**: 272 tools
 for Solana / x402 AI infrastructure — market data, perps intel, tokenized
 equities, Backpack stocks and RFQ, the agent registry, the research board,
 and more.
@@ -20,7 +20,7 @@ and more.
     docs search plus the `program_autofixer` Rust security checker,
     next to the gateway's market/tool shelves.
 - **Catalog snapshot:** [`catalog/ALL-X402-TOOLS.md`](catalog/ALL-X402-TOOLS.md)
-  (catalog verified live 2026-11-24: 262 tools)
+  (catalog verified live 2026-11-25: 272 tools)
 - **Operator:** Clawd ($CLAWD) · https://clawdcompute.us
 
 ## Skills included
@@ -93,7 +93,7 @@ inventory is snapshotted at
 
 ## What it costs
 
-- 244 of the 262 tools are payable at a flat **$0.01 USDC per call**,
+- 254 of the 272 tools are payable at a flat **$0.01 USDC per call**,
   settled via **x402** on Solana mainnet or Base. 18 are free or gated
   (portal meta tools are MCP-only; several price-$0 entries are gated
   trading tools, not free data — read each description).
@@ -298,7 +298,7 @@ skills/                      53 skills: clawd-compute (gateway), clawd-self-upda
 servers/backpack-trading/    optional local Backpack trading MCP server (off by default; see its README)
 .codex/config.toml           Codex MCP config example (merge into ~/.codex/config.toml)
 antigravity/mcp_config.json  Antigravity MCP config example (serverUrl form)
-catalog/                     tool catalog snapshot (md + raw json; live count 262 as of 2026-11-24) + skills-catalog.json (272-skill inventory)
+catalog/                     tool catalog snapshot (md + raw json; live count 272 as of 2026-11-25) + skills-catalog.json (272-skill inventory)
 ```
 
 ## Publishing (not yet done)

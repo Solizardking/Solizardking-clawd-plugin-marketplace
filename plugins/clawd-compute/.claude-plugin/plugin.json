@@ -2,7 +2,7 @@
   "author": {
     "name": "Clawd"
   },
-  "description": "Clawd Compute gateway: 262 tools for Solana/x402 AI infrastructure \u2014 market data, perps intel, agent registry, research board and more via mcp.clawdcompute.us, plus the PumpAI and tokenized-equities MCP connectors. Payable tools settle via x402 at $0.01/call. Bundles 53 skills, including clawd-self-update and clawd-x402-tools, plus 50 Solana development skills from the Clawd Compute skills catalog (Anchor, compressed accounts, Pump, Metaplex, wallet and RPC playbooks).",
+  "description": "Clawd Compute gateway: 272 tools for Solana/x402 AI infrastructure \u2014 market data, perps intel, agent registry, research board and more via mcp.clawdcompute.us, plus the PumpAI and tokenized-equities MCP connectors. Payable tools settle via x402 at $0.01/call. Bundles 53 skills, including clawd-self-update and clawd-x402-tools, plus 50 Solana development skills from the Clawd Compute skills catalog (Anchor, compressed accounts, Pump, Metaplex, wallet and RPC playbooks).",
   "homepage": "https://clawdcompute.us",
   "keywords": [
     "solana",
